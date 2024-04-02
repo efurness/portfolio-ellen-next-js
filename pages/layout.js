@@ -3,13 +3,38 @@ import Nav from '../components/Common/Nav/Nav';
 import { FaBars, FaMousePointer } from 'react-icons/fa';
 import { SlOptionsVertical } from 'react-icons/sl';
 import { useState } from 'react';
+import Switch from "react-switch";
 
 export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const [intro, setIntro] = useState(false);
+  const [theme, setTheme] = useState("dark");
+  const textColor = theme === "dark" ? "text-Snow" : "text-Fuschia";
+  const textColors = theme === "dark" ? "text-Snow" : "text-DeepNightBlack";
 
+  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-100";
+
+  
   return (
     <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none font-circular`}>
+      <div className="theme-switcher">
+        <label style={{float:"right"}}>
+          <span>Theme:</span>
+          <Switch
+            onChange={() => {
+              if (theme === "dark") {
+                setTheme("light");
+              } else {
+                setTheme("dark");
+              }
+              console.log(theme);
+            }}
+            checked={theme === "dark" ? true : false}
+            
+          />
+        </label>
+      </div>
+      
       <div className='lg:hidden'>
         <div className=' bg-DeepNightBlack text-LightGray w-full h-10 flex items-center justify-between px-2 lg:hidden relative'>
           <div className='icon flex items-center gap-x-2' onClick={(e) => setIntro(!intro)}>
@@ -31,16 +56,16 @@ export default function Layout({ children }) {
       <div className='flex relative h-full justify-between gap-x-3'>
         {/* left most side */}
         <div
-          className={`w-64 h-screen left-0 lg:rounded-xl -top-10 lg:top-0 lg:left-0 lg:h-full overflow-hidden bg-DeepNightBlack shadow-2xl z-50 lg:flex flex-col  lg:relative ${
+          className={`w-64 h-screen left-0 lg:rounded-xl -top-10 lg:top-0 lg:left-0 lg:h-full overflow-hidden ${bgColor} ${textColor} shadow-2xl z-50 lg:flex flex-col  lg:relative ${
             intro ? 'flex absolute' : 'hidden'
           }`}>
-          <Intro isOpen={intro} setIsOpen={setIntro} />
+          <Intro isOpen={intro} setIsOpen={setIntro} theme={theme} />
         </div>
         {/* overlay */}
         {intro && <div onClick={(e) => setIntro(false)} className='fixed top-0 left-0  w-full h-full bg-black/50 backdrop-blur-[2px] z-40'></div>}
 
         {/* middle of screen */}
-        <div className='w-full h-auto lg:w-9/12 shadow-2xl bg-DeepNightBlack relative overflow-auto overflow-x-hidden no-scrollbar'>{children}</div>
+        <div className={`w-full h-auto lg:w-9/12 shadow-2xl ${bgColor} ${textColor}  relative overflow-auto overflow-x-hidden no-scrollbar`}>{children}</div>
 
         {/* right side */}
         {/* right side */}
@@ -51,7 +76,7 @@ export default function Layout({ children }) {
               <FaBars />
             </span>
           </div>
-          <span className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 flex items-center justify-center text-center text-xl text-gray-600 font-extrabold tracking-widest'>
+          <span className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 flex items-center justify-center text-center text-xl ${textColor}  font-extrabold tracking-widest`}>
             NavBar
           </span>
         </div>
