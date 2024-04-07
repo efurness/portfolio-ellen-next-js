@@ -23,13 +23,13 @@ export default function Layout({ children }) {
           <span>Theme:</span>
           <Switch
             onChange={() => {
-              if (theme === "dark") {
-                setTheme("light");
-              } else {
+              if (theme === "light") {
                 setTheme("dark");
+              } else {
+                setTheme("light");
               }
             }}
-            checked={theme === "dark" ? true : false}
+            checked={theme === "light" ? true : false}
           />
         </label>
       </div>
