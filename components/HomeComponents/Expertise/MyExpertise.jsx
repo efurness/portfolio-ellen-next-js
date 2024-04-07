@@ -4,6 +4,7 @@ import axios from "axios";
 import ParagraphSkeleton from "../../Common/ParagraphSkeleton";
 
 const MyExpertise = (props) => {
+  const theme=props.theme
   const { isLoading, error, data } = useQuery("expertise", () =>
     axios
       .get("api/expertise")
@@ -23,7 +24,7 @@ const MyExpertise = (props) => {
                 className={"space-y-2 p-8"}
               />
             ))
-          : data?.map((data, key) => <ExpertiseCard key={key} data={data} />)}
+          : data?.map((data, key) => <ExpertiseCard key={key} data={data} theme={theme} />)}
       </div>
     </>
   );

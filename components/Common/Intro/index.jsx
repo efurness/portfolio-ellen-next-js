@@ -47,7 +47,7 @@ const Intro = (props) => {
         {/* <Location /> */}
         {/* <Languages /> */}
         <Skills />
-        <Tools />
+        <Tools theme={theme} />
         <Contact />
         <Download icon={<FaDownload />} />
       </div>

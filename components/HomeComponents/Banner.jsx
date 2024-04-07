@@ -4,8 +4,9 @@ import { Link } from "react-scroll";
 
 const Banner = (props) => {
   const textColor = props.theme === "dark" ? "text-Snow" : "text-Fuschia";
-  const bgColor = props.theme === "dark" ? "bg-LightGray/10" : "bg-Snow/50";
-  const gradient = props.theme === "dark" ? "from-MidNightBlack" : "from-Snow";
+  const bgColor = props.theme === "dark" ? "bg-LightGray/10" : "";
+  const gradient = props.theme === "dark" ? "from-MidNightBlack" : "from-Snow/10";
+  
   return (
     <BannerLayout>
       <div
