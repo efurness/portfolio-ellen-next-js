@@ -10,7 +10,7 @@ export default function Layout(props) {
   const [intro, setIntro] = useState(false);
   const theme = props.theme,
     setTheme = props.setTheme;
-  const textColor = theme === "dark" ? "text-Snow" : "text-Fuschia";
+  const textColor = theme === "dark" ? "text-Snow" : "text-black";
   const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-100";
   return (
     <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none`}>

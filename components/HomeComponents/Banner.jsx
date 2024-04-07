@@ -3,9 +3,11 @@ import BannerLayout from "../Common/BannerLayout";
 import { Link } from "react-scroll";
 
 const Banner = (props) => {
-  const textColor = props.theme === "dark" ? "text-Snow" : "text-Fuschia";
+  const textColor = props.theme === "dark" ? "text-Snow" : "text-Black";
   const bgColor = props.theme === "dark" ? "bg-LightGray/10" : "";
   const gradient = props.theme === "dark" ? "from-MidNightBlack" : "from-Snow/10";
+  const textColors = props.theme === "dark" ? "text-Snow" : "text-indigo-100";
+
   
   return (
     <BannerLayout>
@@ -19,7 +21,7 @@ const Banner = (props) => {
             <div className="">
               <div className="">
                 <h1
-                  className={`text-3xl sm:text-4xl xl:text-5xl ${textColor} font-bold`}
+                  className={`text-3xl sm:text-4xl xl:text-5xl ${textColors} font-bold`}
                 >
                   Ellen D Furness
                 </h1>
@@ -35,7 +37,7 @@ const Banner = (props) => {
                     </span>
                     {">"}{" "}
                     <span
-                      className={`${textColor} sm:text-xl xl:text-2xl font-bold`}
+                      className={`${textColors} sm:text-xl xl:text-2xl font-bold`}
                     >
                       {" "}
                       I am a{" "}
@@ -85,7 +87,7 @@ const Banner = (props) => {
             <span className="text-base md:text-lg text-Green font-bold">
               5+
             </span>
-            <span className={`text-xs ${textColor}`}>
+            <span className={`text-xs ${textColors}`}>
               Completed Web Porfolios
             </span>
           </div>
@@ -94,21 +96,21 @@ const Banner = (props) => {
             <span className="text-base md:text-lg text-Green font-bold">
               1+
             </span>
-            <span className={`text-xs ${textColor}`}>Certificates</span>
+            <span className={`text-xs ${textColors}`}>Certificates</span>
           </div>
 
           <div className="flex items-center gap-x-1">
             <span className="text-base md:text-lg text-Green font-bold">
               2+
             </span>
-            <span className={`text-xs ${textColor}`}>Honors & Awards</span>
+            <span className={`text-xs ${textColors}`}>Honors & Awards</span>
           </div>
 
           <div className="flex items-center gap-x-1">
             <span className="text-base md:text-lg text-Green font-bold">
               8+
             </span>
-            <span className={`text-xs ${textColor}`}>GIS Projects</span>
+            <span className={`text-xs ${textColors}`}>GIS Projects</span>
           </div>
         </div>
       </div>
