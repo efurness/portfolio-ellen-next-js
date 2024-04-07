@@ -22,13 +22,13 @@ const background = [
                 detail: "Teaching Assistantship, Research Psittacine Species, Foraging and Activity of Red-shafted Flickers",
                 year: '1995'
             },
-            {
-                id: 2,
-                title: 'Colorado College',
-                degree: 'BA, Applied Biology',
-                detail: "Completed Biological Research",
-                year: '1989'
-            },
+            // {
+            //     id: 2,
+            //     title: 'Colorado College',
+            //     degree: 'BA, Applied Biology',
+            //     detail: "Completed Biological Research",
+            //     year: '1989'
+            // },
         ]
     },
     {
@@ -42,15 +42,15 @@ const background = [
                 year: '2010',
                 location: 'Lakewood, Denver'
             },
-            {
-                id: 2,
-                title: 'Colorado College Geology Department',
-                role: 'Web Builder',
-                url: 'https://www.coloradocollege.edu/academics/dept/geology/',
-                desc: 'Website design and maintenance of Geology Department websites and the Integrated Solid Earth Sciences (ISeS) Antarctica website. Provided front-end website development using Dreamweaver and other editing software.',
-                year: '2009',
-                location: 'Colorado Springs'
-            },
+            // {
+            //     id: 2,
+            //     title: 'Colorado College Geology Department',
+            //     role: 'Web Builder',
+            //     url: 'https://www.coloradocollege.edu/academics/dept/geology/',
+            //     desc: 'Website design and maintenance of Geology Department websites and the Integrated Solid Earth Sciences (ISeS) Antarctica website. Provided front-end website development using Dreamweaver and other editing software.',
+            //     year: '2009',
+            //     location: 'Colorado Springs'
+            // },
             {
                 id: 3,
                 title: 'US Forest Service',
