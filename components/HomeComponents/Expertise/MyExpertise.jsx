@@ -3,14 +3,13 @@ import { useQuery } from "react-query";
 import axios from "axios";
 import ParagraphSkeleton from "../../Common/ParagraphSkeleton";
 
-const MyExpertise = () => {
+const MyExpertise = (props) => {
   const { isLoading, error, data } = useQuery("expertise", () =>
     axios
       .get("api/expertise")
       .then(({ data }) => data)
       .catch((error) => console.error("Error fetching testimonials:", error))
   );
-
   return (
     <>
       <div className="px-2 md:px-8 py-4 text-lg font-bold text-Snow">

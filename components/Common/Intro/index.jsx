@@ -17,20 +17,26 @@ import { NAME, DESIGNATION, SOCIAL_LINKS } from "../../../constants/constants";
 import Ellen from "../../../public/images/portfolio2024.png";
 
 const Intro = (props) => {
+  const theme = props.theme;
+  const textColor = theme === "dark" ? "text-Snow" : "text-Fuschia";
+  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-100";
+
   return (
     <>
       {/* fixed at top */}
-      <div className="header z-50 absolute ${bgColor} backdrop-blur-sm inset-y-0 h-48 top-0 flex items-center justify-center w-full flex-col px-4 gap-y-4">
+      <div
+        className={`header z-50 absolute ${bgColor} backdrop-blur-sm inset-y-0 h-48 top-0 flex items-center justify-center w-full flex-col px-4 gap-y-4`}
+      >
         <Image
           className="w-20 h-20 rounded-full"
           src={Ellen}
           alt="profile picture"
         />
         <div className="flex flex-col items-center justify-center">
-          <span className="${textColor} text-base font-bold break-normal">
+          <span className={`${textColor} text-base font-bold break-normal`}>
             {NAME}
           </span>
-          <span className="text-sm ${textColors} text-center mt-2">
+          <span className={`text-sm ${textColor} text-center mt-2`}>
             {DESIGNATION}
           </span>
         </div>
@@ -47,7 +53,9 @@ const Intro = (props) => {
       </div>
 
       {/* fixed at bottom */}
-      <div className="footer absolute flex justify-center space-x-6 text-xl items-center bottom-0 z-50 h-10 w-full bg-MidNightBlack text-Snow">
+      <div
+        className={`footer absolute flex justify-center space-x-6 text-xl items-center bottom-0 z-50 h-10 w-full ${bgColor} ${textColor}`}
+      >
         <Link
           href={SOCIAL_LINKS.GITHUB}
           target="_blank"

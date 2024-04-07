@@ -5,19 +5,15 @@ import { SlOptionsVertical } from "react-icons/sl";
 import { useState } from "react";
 import Switch from "react-switch";
 
-export default function Layout({ children }) {
+export default function Layout(props) {
   const [isOpen, setIsOpen] = useState(false);
   const [intro, setIntro] = useState(false);
-  const [theme, setTheme] = useState("dark");
+  const theme = props.theme,
+    setTheme = props.setTheme;
   const textColor = theme === "dark" ? "text-Snow" : "text-Fuschia";
-  const textColors = theme === "dark" ? "text-Snow" : "text-DeepNightBlack";
-
   const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-100";
-
   return (
-    <div
-      className={`h-screen lg:p-[0.8rem] flex flex-col select-none font-circular`}
-    >
+    <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none`}>
       <div className="theme-switcher">
         <label style={{ float: "right" }}>
           <span>Theme:</span>
@@ -35,7 +31,9 @@ export default function Layout({ children }) {
       </div>
 
       <div className="lg:hidden">
-        <div className=" bg-DeepNightBlack text-LightGray w-full h-10 flex items-center justify-between px-2 lg:hidden relative">
+        <div
+          className={`${bgColor} ${textColor} w-full h-10 flex items-center justify-between px-2 lg:hidden relative`}
+        >
           <div
             className="icon flex items-center gap-x-2"
             onClick={(e) => setIntro(!intro)}
@@ -43,7 +41,7 @@ export default function Layout({ children }) {
             <span className="icon border-2 text-Green border-Green p-1 text-sm rounded-lg">
               <SlOptionsVertical />
             </span>
-            <div className="text-Snow absolute -right-1 -bottom-1">
+            <div className={`${textColor} absolute -right-1 -bottom-1`}>
               <FaMousePointer />
             </div>
           </div>
@@ -79,17 +77,16 @@ export default function Layout({ children }) {
         <div
           className={`w-full h-auto lg:w-9/12 shadow-2xl ${bgColor} ${textColor}  relative overflow-auto overflow-x-hidden no-scrollbar`}
         >
-          {children}
+          {props.children}
         </div>
 
-        {/* right side */}
-        {/* right side */}
+        {/* right sidebar */}
         <div
-          className={`hidden lg:block absolute lg:w-20 lg:relative bg-DeepNightBlack shadow-2xl rounded-xl overflow-hidden`}
+          className={`hidden lg:block absolute lg:w-20 lg:relative ${bgColor} shadow-2xl rounded-xl overflow-hidden`}
         >
           <div
             onClick={(e) => setIsOpen(!isOpen)}
-            className="bg-MidNightBlack text-Green hidden lg:flex items-center h-16 justify-center text-2xl "
+            className={`${bgColor} text-Green hidden lg:flex items-center h-16 justify-center text-2xl`}
           >
             <span className="icon border-2 border-Green p-2 rounded-xl">
               {" "}
@@ -102,7 +99,7 @@ export default function Layout({ children }) {
             NavBar
           </span>
         </div>
-        {<Nav isOpen={isOpen} setIsOpen={setIsOpen} />}
+        {<Nav isOpen={isOpen} setIsOpen={setIsOpen} theme={theme} />}
       </div>
     </div>
   );
