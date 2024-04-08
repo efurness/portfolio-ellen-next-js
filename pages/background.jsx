@@ -8,7 +8,9 @@ import axios from "axios";
 import { Skeleton } from "antd";
 import ParagraphSkeleton from "../components/Common/ParagraphSkeleton";
 
-function Background() {
+function Background( props ) {
+  const theme=props.theme;
+
   const { isLoading, error, data } = useQuery("background", () =>
     axios
       .get("api/background")
@@ -32,12 +34,12 @@ function Background() {
               ))
             : data &&
               data[0]?.eduCards?.map((data, key) => (
-                <Edu_Card key={key} data={data} />
+                <Edu_Card key={key} data={data} theme={theme} />
               ))}
         </div>
         <div className="order-1 md:order-2">
           <div className="flex flex-col gap-y-4 md:ml-12">
-            <div className=" md:pt-0 pt-4 text-xl text-Snow font-semibold">
+            <div className={`md:pt-0 pt-4 text-xl text-Snow font-semibold`}>
               Experience
             </div>
 
@@ -50,7 +52,7 @@ function Background() {
                 ))
               : data &&
                 data[1]?.expCards?.map((data, key) => (
-                  <Exp_Card key={key} data={data} />
+                  <Exp_Card key={key} data={data} theme={theme} />
                 ))}
           </div>
         </div>

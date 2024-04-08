@@ -4,7 +4,7 @@ import CardLayout from '../Common/CardLayout'
 const Exp_Card = ( props ) => {
     const data = props.data
     const textColor = props.theme === "dark" ? "text-Snow" : "text-MidNightBlack";
-    const bgColor = props.theme === "dark" ? "bg-LightGray/10" : "bg-Green";
+    const bgColor = props.theme === "dark" ? "bg-DeepNightBlack" : "bg-Green";
  
     return (
         <CardLayout>
@@ -21,7 +21,7 @@ const Exp_Card = ( props ) => {
                 <div className={`${textColor} text-sm font-normal mt-4 text-justify`}>
                     {data.desc}
                 </div>
-                <div className={`flex justify-between ${textColor} ${bgColor}k w-full h-auto text-xs rounded-full py-3 px-6 mt-4 font-normal opacity-50 `}>
+                <div className={`flex justify-between ${textColor} ${bgColor} w-full h-auto text-xs rounded-full py-3 px-6 mt-4 font-normal opacity-50 `}>
                     <div>{data.year}</div> <div>{data.location}</div>
                 </div>
             </div>

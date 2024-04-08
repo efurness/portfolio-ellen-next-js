@@ -51,12 +51,10 @@ export const TECH_STACK = [
 ];
 
 export const CONTACTS = {
-  EMAIL: 'iosamajavaid@gmail.com',
-  PHONE: '+923159591822',
+  // EMAIL: 'iosamajavaid@gmail.com',
+  // PHONE: '+923159591822',
 };
 export const SOCIAL_LINKS = {
   GITHUB: 'https://github.com/efurness',
   LINKEDIN: 'https://www.linkedin.com/feed/',
-  // TWITTER: 'https://twitter.com/iosamajavaid',
-  // FACEBOOK: 'https://www.facebook.com/iosamajavaid',
 };
