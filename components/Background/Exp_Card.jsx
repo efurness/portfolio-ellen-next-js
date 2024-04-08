@@ -3,7 +3,7 @@ import CardLayout from '../Common/CardLayout'
 
 const Exp_Card = ( props ) => {
     const data = props.data
-    const textColor = props.theme === "dark" ? "text-Snow" : "text-Black";
+    const textColor = props.theme === "dark" ? "text-Snow" : "text-MidNightBlack";
     const bgColor = props.theme === "dark" ? "bg-LightGray/10" : "bg-Green";
  
     return (

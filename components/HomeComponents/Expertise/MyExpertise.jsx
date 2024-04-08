@@ -4,7 +4,7 @@ import axios from "axios";
 import ParagraphSkeleton from "../../Common/ParagraphSkeleton";
 
 const MyExpertise = (props) => {
-  const theme=props.theme
+  const theme=props.theme;
   const { isLoading, error, data } = useQuery("expertise", () =>
     axios
       .get("api/expertise")

@@ -4,6 +4,7 @@ import { useQuery } from "react-query";
 import ParagraphSkeleton from "../../Common/ParagraphSkeleton";
 
 const Recommendations = () => {
+  const theme=props.theme;
   const { isLoading, error, data } = useQuery("recommendations", () =>
     axios
       .get("api/recommendations")
@@ -25,7 +26,7 @@ const Recommendations = () => {
               />
             ))
           : data?.map((data, key) => (
-              <RecommendationCard key={key} data={data} />
+              <RecommendationCard key={key} data={data} theme={theme} />
             ))}
       </div>
     </>
