@@ -3,7 +3,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import ParagraphSkeleton from "../../Common/ParagraphSkeleton";
 
-const Recommendations = () => {
+const Recommendations = ( props ) => {
   const theme=props.theme;
   const { isLoading, error, data } = useQuery("recommendations", () =>
     axios
