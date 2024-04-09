@@ -16,14 +16,13 @@ const recommendationCard = [
     view: "Ellen is quite knowledgable about GIS and Web Development having created many apps using React Leaflet, REACT, NEXTjs, and MapView.  A common thread is her outstanding map development as seen in GIS StoryMap and Experience Builder.  To combine GIS, Biology, and Web makes her very appealing candidate for an organization 🌟",
     linkednURL: ""
   },
-  // {
-  //   id: 2,
-  //   name: 'Nasir Khan',
-  //   image: "images/nasir.jpg",
-  //   designation: 'MERN | JavaScript | Tailwind | Sass | Bootstrap',
-  //   view: "I wholeheartedly recommend Osama as a talented React frontend developer with an incredible flair for UI/UX design. His proficiency in Node.js further enhances his capabilities, allowing him to build robust and scalable applications. Osama's attention to detail, problem-solving skills, and dedication to delivering exceptional results make him a valuable addition to any development team.",
-  //   linkednURL: "https://www.linkedin.com/in/nasirkhan22/"
-  // },
+  {
+    id: 2,
+    name: 'Mrs. Shelley Levine',
+    image: "images/romeo.jpg",
+    designation: 'Cranial Sacral Therapist | Trauma Recovery Specialist | Life Coach',
+    view: "As a close friend and professional confidant, I have experienced Ellen as a very bright, productive ambitious person, who diligently works always up to a new challenge. Ellen not only learns new technologies in depth with great speed, she also raises the bar as her standards are high and never cease to reflect her superlative talent! My field as a Holistic practitioner, I meet a wide variety of people. Ellen is most impressive and would undoubtedly be a great asset for the fortunate company that hires Ellen.🌟",
+  },
   // {
   //   id: 3,
   //   name: 'Muhammad Ullah',
