@@ -6,7 +6,7 @@ const Banner = (props) => {
   const textColor = props.theme === "dark" ? "text-Snow" : "text-Black";
   const bgColor = props.theme === "dark" ? "bg-LightGray/10" : "";
   const gradient = props.theme === "dark" ? "from-MidNightBlack" : "from-Snow/10";
-  const textColors = props.theme === "dark" ? "text-Snow" : "text-indigo-100";
+  const textColors = props.theme === "dark" ? "text-Snow" : "text-indigo-200";
 
   
   return (

@@ -18,7 +18,7 @@ import Ellen from "../../../public/images/portfolio2024.png";
 
 const Intro = (props) => {
   const theme = props.theme;
-  const textColor = theme === "dark" ? "text-Snow" : "text-Fuschia";
+  const textColor = theme === "dark" ? "text-Snow" : "text-DeepNightBlack";
   const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-100";
 
   return (
