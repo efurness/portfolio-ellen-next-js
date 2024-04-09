@@ -23,14 +23,6 @@ const recommendationCard = [
     designation: 'Cranial Sacral Therapist | Trauma Recovery Specialist | Life Coach',
     view: "As a close friend and professional confidant, I have experienced Ellen as a very bright, productive ambitious person, who diligently works always up to a new challenge. Ellen not only learns new technologies in depth with great speed, she also raises the bar as her standards are high and never cease to reflect her superlative talent! My field as a Holistic practitioner, I meet a wide variety of people. Ellen is most impressive and would undoubtedly be a great asset for the fortunate company that hires Ellen.🌟",
   },
-  // {
-  //   id: 3,
-  //   name: 'Muhammad Ullah',
-  //   image: "images/muhammad.jpeg",
-  //   designation: 'MERN Stack Developer at Productbox',
-  //   view: "I highly recommend Osama Javed for web frontend development positions. Their expertise in ReactJS and Next.js, combined with their professionalism and dedication, make them an invaluable asset to any team.",
-  //   linkednURL: "https://www.linkedin.com/in/muhammadullahafridi/"
-  // },
 ]
 export default function handler(req, res) {
   res.status(200).json(recommendationCard)
