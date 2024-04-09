@@ -13,7 +13,7 @@ const expertise = [
     {
         id: 2,
         title: 'Designing (UI/UX)',
-        desc: 'I am have a certificate in Web Development and proficient in using design software such as Dreamweaver, PhotoScape X, and Adobe Illustrator. Through participating in freelance work, I have gained practical experience in UI/UX design. Front-end design with REACT and Next.js is my passion, and it has allowed me to continue to develop my creative skills.',
+        desc: 'I am have a certificate in Web Development and proficient in using design software such as Dreamweaver, PhotoScape X, and Adobe Illustrator. Through participating in freelance work has allowed me to continue to develop my creative skills.',
     },
     {
         id: 3,

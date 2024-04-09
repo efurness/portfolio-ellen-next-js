@@ -9,6 +9,7 @@ const NewsFeed = () => {
       </div>
       <Footer />
     </BannerLayout>
+    
   );
 };
 

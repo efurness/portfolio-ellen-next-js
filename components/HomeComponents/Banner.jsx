@@ -88,7 +88,7 @@ const Banner = (props) => {
               5+
             </span>
             <span className={`text-xs ${textColors}`}>
-              Completed Web Porfolios
+              Completed REACT NEXTjs Porfolios
             </span>
           </div>
 
