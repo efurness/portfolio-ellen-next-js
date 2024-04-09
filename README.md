@@ -1,28 +1,22 @@
 <div align="center">
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/osamajavaid/portfolio)
-  ![GitHub stars](https://img.shields.io/github/stars/osamajavaid/portfolio?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/osamajavaid/portfolio?style=social)
-  [![Twitter Follow](https://img.shields.io/twitter/follow/iosamajavaid?style=social)](https://twitter.com/intent/follow?screen_name=iosamajavaid)
 
   <br />
   <br />
   
   <img src="./public/readme-images/moj.png" />
 
-  <h2 align="center">Muhammad Osama Javaid - Personal portfolio</h2>
+  <h2 align="center">Ellen D. Furness - Personal portfolio</h2>
 
 This website is fully responsive personal portfolio, <br />Responsive for all devices, built using Nextjs, TailwindCSS only.
 
-<a href="https://osamajavaid.vercel.app/"><strong>➥ Live Demo</strong></a>
-
+Based on a Portfolio template made by Osama Javaid, contributor  Significant changes were made especially a REACT Switch for Light and Dark mode, and using template literals to change the colors of the component cards for both light and dark. Update of components with my education, experience and expertise.  Code completed with assistance from Austin Heller. A very great learning experience!
 </div>
 
 <br />
 
 ### Demo Screeshots
 
-![Osama Portfolio Desktop Demo](./public/readme-images/portfolio.png "Desktop Demo")
 
 ### Prerequisites
 
@@ -48,7 +42,7 @@ git clone https://github.com/osamajavaid/portfolio.git
 
 ### Contact
 
-If you want to contact with me you can reach me at [X](https://www.x.com/iosamajavaid).
+If you want to contact with me you can reach me at.
 
 ### License
 

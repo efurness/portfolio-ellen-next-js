@@ -13,7 +13,7 @@ const recommendationCard = [
     name: 'Patricia F',
     image: "images/pup.png",
     designation: 'Design',
-    view: "Knowledgable about your subject, GIS designer will continue to do outstanding map development.",
+    view: "Ellen is quite knowledgable about GIS and Web Development having created many apps using React Leaflet, REACT, NEXTjs, and MapView.  A common thread is her outstanding map development as seen in GIS StoryMap and Experience Builder.  To combine GIS, Biology, and Web makes her very appealing candidate for an organization 🌟",
     linkednURL: ""
   },
   // {
