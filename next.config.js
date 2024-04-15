@@ -1,6 +1,8 @@
 module.exports = {
   output: 'export',
   basePath: '/portfolio-ellen-next-js',
+  assetPrefix: '/portfolio-ellen-next-js',
+
   images: {
     unoptimized: true
   },
