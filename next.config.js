@@ -1,6 +1,5 @@
 module.exports = {
   output: "export",
-  assetPrefix: "/portfolio-ellen-next-js",
   images: {
     unoptimized: true,
   },
