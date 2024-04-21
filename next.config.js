@@ -1,5 +1,8 @@
+const isProd = process.env.NODE_ENV === "production";
+
 module.exports = {
   output: "export",
+  assetPrefix: isProd ? "/portfolio-ellen-next-js" : undefined,
   images: {
     unoptimized: true,
   },
