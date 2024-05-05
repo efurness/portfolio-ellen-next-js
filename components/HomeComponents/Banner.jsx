@@ -40,15 +40,16 @@ const Banner = (props) => {
                       className={`${textColors} sm:text-xl xl:text-2xl font-bold`}
                     >
                       {" "}
-                      I am a{" "}
+                      I work with{" "}
                       <span className="inline-block">
                         <Typewriter
                           options={{
                             strings: [
-                              "Biologist",
-                              "REACT Developer",
-                              "GIS Specialist",
-                              "NextJs Developer",
+                              "ArcGIS Pro",
+                              "REACT",
+                              "NEXTjs",
+                              "REACT Leaflet",
+                              "MapView"
                             ],
                             autoStart: true,
                             loop: true,
