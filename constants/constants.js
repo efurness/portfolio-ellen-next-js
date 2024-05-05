@@ -1,6 +1,6 @@
 export const NAME = 'Ellen D. Furness';
 
-export const DESIGNATION = `GIS Specialist | Open Source Contributor | REACT`;
+export const DESIGNATION = `Pursuing a GIS Specialist position with Web`;
 
 export const DETAILS = {
   Residence: 'United States',
