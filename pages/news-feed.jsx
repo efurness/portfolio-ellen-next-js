@@ -24,8 +24,10 @@ const [loading, setLoading] = useState(false);
     }, []);
   return (
     <BannerLayout>
-      <div>
-        New York Times News Feed
+      <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold">
+<br />
+        <center>New York Times News Feed</center>
+        <br />
         <Articles loading={loading} articles={articles} />
       </div>
       <Footer />
