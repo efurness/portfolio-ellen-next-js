@@ -28,7 +28,10 @@ const [loading, setLoading] = useState(false);
 <br />
         <center>New York Times News Feed</center>
         <br />
+        <div className="mt-10 md:mt-0 text-sm text-Snow font-medium font-style: italic">
+
         <Articles loading={loading} articles={articles} />
+      </div>
       </div>
       <Footer />
     </BannerLayout>
