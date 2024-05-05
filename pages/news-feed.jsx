@@ -13,7 +13,9 @@ const [loading, setLoading] = useState(false);
             setLoading(true);
             const res = await axios.get(` https://api.nytimes.com/svc/topstories/v2/home.json?api-key=P820OA3BVKJ4QezqHU7b85aAQkmjezfc`);
             console.log(res);
-            setArticles(res.data.results);
+            let results = res.data.results
+            results.length = 6
+            setArticles(results);
 
             setLoading(false);
         };
@@ -22,8 +24,8 @@ const [loading, setLoading] = useState(false);
     }, []);
   return (
     <BannerLayout>
-      <div className="grid justify items-center grid-flow-row md:grid-cols-2 grid-rows-auto gap-4 px-8 my-6">
-        News feed goes here
+      <div>
+        New York Times News Feed
         <Articles loading={loading} articles={articles} />
       </div>
       <Footer />

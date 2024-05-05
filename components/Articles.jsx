@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 const useStyles = makeStyles({
     card: {
-        maxWidth: 345,
+        maxWidth: 600,
         boxShadow: "0 5px 8px 0 rgba(0, 0, 0, 0.3)",
         backgroundColor: "#fafafa",
     },
