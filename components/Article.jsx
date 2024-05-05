@@ -9,7 +9,7 @@ const Article = ({ article }) => {
         boxShadow: "0 5px 8px 0 rgba(0, 0, 0, 0.3)",
         border: "2px solid #66e48d",
         backgroundColor: "#ffffff",
-        height: 300
+        height: 325
     }}>
         <img src={article.multimedia?.[0]?.url ?
                       `${article.multimedia[0].url}` : 
