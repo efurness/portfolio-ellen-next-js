@@ -48,8 +48,8 @@ const Banner = (props) => {
                               "ArcGIS Pro",
                               "REACT",
                               "NEXTjs",
-                              "REACT Leaflet",
-                              "MapView"
+                              "REACT Leaflet, MapView",
+                              "Tailwind, CSS"
                             ],
                             autoStart: true,
                             loop: true,
