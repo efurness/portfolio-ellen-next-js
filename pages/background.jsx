@@ -29,6 +29,15 @@ const background = [
           "Teaching Assistantship, Research Psittacine Species, Foraging and Activity of Red-shafted Flickers",
         year: "1995",
       },
+      {
+        id: 1,
+        title: "Colorado College",
+        degree: "BA, Biology",
+        detail:
+          "Field biology, Mammalogy concentration",
+        year: "1995",
+      },
+
     ],
   },
   {
