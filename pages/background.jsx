@@ -34,7 +34,7 @@ const background = [
         title: "Colorado College",
         degree: "BA, Biology",
         detail:
-          "Field biology, Mammalogy concentration",
+          "Field biology, Mammalogy, Geology concentration",
         year: "1995",
       },
 
