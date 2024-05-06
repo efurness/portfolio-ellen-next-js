@@ -35,7 +35,7 @@ const background = [
         degree: "BA, Biology",
         detail:
           "Field biology, Mammalogy, Geology concentration",
-        year: "1995",
+        year: "1989",
       },
 
     ],
