@@ -53,6 +53,15 @@ const background = [
       },
       {
         id: 3,
+        title: "Colorado College Geology Department",
+        role: "Web Builder",
+        url: "https://www.coloradocollege.edu/academics/dept/geology/",
+        desc: "Developed Geology Departments website including Professors' homepages and Antarctica website ISES using Dreamweaver, CSS and HTML",
+        year: "2003-2009",
+        location: "Colorado Springs, Colorado",
+      },
+      {
+        id: 3,
         title: "US Forest Service",
         role: "GIS Specialist",
         url: "",
