@@ -9,8 +9,8 @@ const expertise = [
 
   {
     id: 0,
-    title: "Full Stack Development",
-    desc: "I am a skilled Full-stack Javascript developer with extensive experience in building robust web applications using MongoDB, Express.js, React.js, and Node.js. I possess a strong understanding of server-side rendering, API integration, and database management. With my expertise, I can deliver dynamic and efficient web solutions tailored to meet the unique requirements of clients.",
+    title: "Full Stack Web Development",
+    desc: "I am a skilled Full-stack Javascript developer with extensive experience in building robust web applications using MongoDB, Express.js, React.js, and Node.js. I possess a strong understanding of server-side rendering, API integration, and database management. With my expertise, I can deliver dynamic and efficient web solutions tailored to meet the unique requirements of clients. ",
   },
   {
     id: 2,

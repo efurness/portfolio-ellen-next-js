@@ -18,6 +18,7 @@ const Contact = ( props ) => {
       <div className="flex flex-col">
         <span className={`${textColor} text-xs font-bold`}>Phone</span>
         <span className={`text-xs text-gray-600`}>{CONTACTS.PHONE}</span>
+        
       </div>
     </div>
   );

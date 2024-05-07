@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -11,17 +10,17 @@ const Article = ({ article }) => {
         backgroundColor: "#ffffff",
         height: 325
     }}>
-        <img src={article.multimedia?.[0]?.url ?
-                      `${article.multimedia[0].url}` : 
-                    'https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg'
-                 } alt="news-img" />
+        
 
                   <div>
                      <h6>
                         
                         <a href={article.url} target="_blank" rel="noreferrer" style={{ 
                             textDecoration: 'none',
-                            color: "#3f77b7" }}>
+                            color: "#3f77b7" }}><img src={article.multimedia?.[0]?.url ?
+                                `${article.multimedia[0].url}` : 
+                              'https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg'
+                           } alt="news-img" />
                           {article.title}</a>
                  </h6>
                     <span>

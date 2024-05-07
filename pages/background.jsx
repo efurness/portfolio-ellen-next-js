@@ -9,9 +9,9 @@ const background = [
       {
         id: 0,
         title: "University of Denver, Bootcamp",
-        degree: "Full-stack Javascript Web Development",
+        degree: "Certificate: Full-stack Javascript Web Development",
         detail:
-          "Certificate: HTML/CSS | NODE.js | REACT | Full-Stack Projects",
+          "HTML/CSS | NODE.js | REACT | Full-Stack Projects",
         year: "2022",
       },
       {
