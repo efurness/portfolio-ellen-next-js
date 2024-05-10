@@ -18,7 +18,7 @@ New York Times News Feed --
  based from 
  <br />
 
- Medium.com Credits:
+ Medium.com Credits 2021:
  <br />
 
  Build a News App with the NYTimes API & React JS
