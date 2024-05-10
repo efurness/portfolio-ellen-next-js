@@ -12,6 +12,13 @@ This website is fully responsive personal portfolio, <br />Responsive for all de
 
 Based on a Portfolio template made by Osama Javaid, contributor  Significant changes were made especially a REACT Switch for Light and Dark mode, and using template literals to change the colors of the component cards for both light and dark. Update of components with my education, experience and expertise.  Code completed with assistance from Austin Heller. A very great learning experience!
 </div>
+New York Times News Feed --
+ based from 
+ Medium.com Credits:
+ Build a News App with the NYTimes API & React JS
+    Using React Hooks and Axios
+    JavaScript in Plain English
+    Isabel Hong
 
 <br />
 
@@ -20,25 +27,10 @@ Based on a Portfolio template made by Osama Javaid, contributor  Significant cha
 
 ### Prerequisites
 
-Before you begin, ensure you have met the following requirements:
-
-- [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
 ### Run Locally
 
-To run **portfolio** locally, run this command on your git bash:
 
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/osamajavaid/portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/osamajavaid/portfolio.git
-```
 
 ### Contact
 
