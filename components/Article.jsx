@@ -21,7 +21,8 @@ const Article = ({ article }) => {
                                 `${article.multimedia[0].url}` : 
                               'https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg'
                            } alt="news-img" />
-                          {article.title}</a>
+                          <span className='p-2 inline-block'>{article.title}</span>
+                          </a>
                  </h6>
                  {/* <h4>
                     <span>

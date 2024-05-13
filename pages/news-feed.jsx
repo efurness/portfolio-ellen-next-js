@@ -11,7 +11,7 @@ const [loading, setLoading] = useState(false);
     useEffect(() => {
         const getArticles = async () => {
             setLoading(true);
-            const res = await axios.get(` https://api.nytimes.com/svc/topstories/v2/home.json?api-key=P820OA3BVKJ4QezqHU7b85aAQkmjezfc`);
+            const res = await axios.get(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=P820OA3BVKJ4QezqHU7b85aAQkmjezfc`);
             console.log(res);
             let results = res.data.results
             results.length = 6
@@ -24,11 +24,9 @@ const [loading, setLoading] = useState(false);
     }, []);
   return (
     <BannerLayout>
-      <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold">
-<br />
-        <center>New York Times News Feed</center>
-        <br />
-        <div className="mt-10 md:mt-0 text-sm text-Snow font-medium font-style: italic">
+      <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold text-center p-4">
+        <div className="p-4">New York Times News Feed</div>
+        <div className="mt-10 md:mt-0 text-sm text-Snow font-medium font-style: italic text-left">
 
         <Articles loading={loading} articles={articles} />
       </div>
