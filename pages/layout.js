@@ -57,7 +57,7 @@ export default function Layout(props) {
           </div>
         </div>
       </div>
-      <div className="flex relative h-full justify-between gap-x-3">
+      <div className="flex relative h-full justify-between gap-x-3" style={{height: `calc(100% - 30px);`}}> 
         {/* left most side */}
         <div
           className={`w-64 h-screen left-0 lg:rounded-xl -top-10 lg:top-0 lg:left-0 lg:h-full overflow-hidden ${bgColor} ${textColor} shadow-2xl z-50 lg:flex flex-col  lg:relative ${
