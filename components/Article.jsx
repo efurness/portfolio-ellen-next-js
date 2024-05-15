@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { ZoomIn } from '@material-ui/icons';
+import { SlCalender } from 'react-icons/sl';
 
 const Article = ({ article }) => {
     return (<div
@@ -8,11 +10,12 @@ const Article = ({ article }) => {
         boxShadow: "0 5px 8px 0 rgba(0, 0, 0, 0.3)",
         border: "2px solid #66e48d",
         backgroundColor: "#ffffff",
-        height: 325
+        height: 325,
+        
     }}>
         
 
-                  <div>
+                  <div className='hover:saturate-200 hover:drop-shadow-2xl'>
                      <h6>
                         
                         <a href={article.url} target="_blank" rel="noreferrer" style={{ 
