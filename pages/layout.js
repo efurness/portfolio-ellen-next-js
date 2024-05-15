@@ -11,7 +11,7 @@ export default function Layout(props) {
   const theme = props.theme,
     setTheme = props.setTheme;
   const textColor = theme === "dark" ? "text-Snow" : "text-black";
-  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-100";
+  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50";
   
   return (
     <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none`}>
@@ -57,7 +57,7 @@ export default function Layout(props) {
           </div>
         </div>
       </div>
-      <div className="flex relative h-full justify-between gap-x-3" style={{height: `calc(100% - 30px);`}}> 
+      <div className="flex relative h-full justify-between gap-x-3" style={{height: `calc(100% - 30px)`}}> 
         {/* left most side */}
         <div
           className={`w-64 h-screen left-0 lg:rounded-xl -top-10 lg:top-0 lg:left-0 lg:h-full overflow-hidden ${bgColor} ${textColor} shadow-2xl z-50 lg:flex flex-col  lg:relative ${
