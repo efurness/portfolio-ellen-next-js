@@ -24,7 +24,7 @@ const [loading, setLoading] = useState(false);
     }, []);
   return (
     <BannerLayout>
-      <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold text-center p-4">
+      <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold text-center">
         <div className="p-4">New York Times News Feed</div>
         <div className="mt-10 md:mt-0 text-sm text-Snow font-medium font-style: italic text-left">
 
