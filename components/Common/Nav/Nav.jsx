@@ -45,7 +45,7 @@ const Nav = ({ setIsOpen, isOpen }) => {
             setIsOpen={setIsOpen}
             NavRoute={"/news-feed"}
             NavIcon={<FiAward />}
-            NavText={"News Feed 🌟"}
+            NavText={"News Feed"}
           />
         </div>
       </div>
