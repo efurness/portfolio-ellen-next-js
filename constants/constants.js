@@ -35,7 +35,6 @@ export const SKILLS = [
 
 export const TECH_STACK = [
   'ArcGIS Pro',
-  'JavaScript API',
   'Python for ArcGIS',
   'ReactJS',
   'ArcGIS API for JavaScript',
@@ -44,16 +43,12 @@ export const TECH_STACK = [
   'NodeJS',
   'CSS',
   'Tailwind',
-  'REST API',
-  'MongoDB',
-  'MySQL',
-  'Git',
   'GitHub',
 ];
 
 export const CONTACTS = {
-  // EMAIL: 'iosamajavaid@gmail.com',
-  // PHONE: '+923159591822',
+  // EMAIL: '',
+  // PHONE: '',
 };
 export const SOCIAL_LINKS = {
   GITHUB: 'https://github.com/efurness',
