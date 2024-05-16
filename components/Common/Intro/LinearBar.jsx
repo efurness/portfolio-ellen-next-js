@@ -1,6 +1,8 @@
 import React from 'react'
 
-const LinearBar = ({ title, percent, bgColor }) => {
+
+const LinearBar = ({ title, percent, bgColor  }) => {
+    
     return (
         <div className="">
             <div className="flex justify-between mb-1">
