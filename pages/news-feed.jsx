@@ -24,8 +24,8 @@ const [loading, setLoading] = useState(false);
     }, []);
   return (
     <BannerLayout>
-      <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold text-center">
-        <div className="p-4">New York Times <span className="text-blue-300 font-bold animate-pulse">Top Stories</span></div>
+      <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold text-center font-serif">
+        <div className="p-4">New York Times <span className="text-blue-300 font-bold animate-pulse font-serif">Top Stories</span></div>
         <div className="mt-10 md:mt-0 text-sm text-Snow font-medium font-style: italic text-left">
 
         <Articles loading={loading} articles={articles} />
