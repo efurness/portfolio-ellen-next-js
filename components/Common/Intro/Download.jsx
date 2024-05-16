@@ -2,6 +2,7 @@ import Link from 'next/link';
 const Download = ( props ) => {
   const theme = props.theme;
   const textColor = theme === "dark" ? "text-Snow" : "text-DeepNightBlack";
+  
 
   return (
     <>

@@ -3,10 +3,18 @@ import Footer from "../components/Footer";
 import React, { useEffect, useState } from 'react';
 import Articles from '../components/Articles';
 import axios from 'axios';
-
+function getDate() {
+  const today = new Date();
+  const month = today.getMonth() + 1;
+  const year = today.getFullYear();
+  const date = today.getDate();
+  return `${month}/${date}/${year}`;
+}
 const NewsFeed = () => {
 const [loading, setLoading] = useState(false);
   const [articles, setArticles] = useState([]);
+  const [currentDate, setCurrentDate] = useState(getDate());
+
 
     useEffect(() => {
         const getArticles = async () => {
@@ -24,6 +32,11 @@ const [loading, setLoading] = useState(false);
     }, []);
   return (
     <BannerLayout>
+      
+      <div className="mt-10 md:mt-0 text-xl text-Snow font-medium text-center font-serif text-right">
+
+      <p>{currentDate}</p>
+    </div>
       <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold text-center font-serif">
         <div className="p-4">New York Times <span className="text-blue-300 font-bold animate-pulse font-serif">Top Stories</span></div>
         <div className="mt-10 md:mt-0 text-sm text-Snow font-medium font-style: italic text-left font-serif">
