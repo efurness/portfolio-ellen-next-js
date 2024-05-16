@@ -15,7 +15,7 @@ const Article = ({ article }) => {
     }}>
         
 
-                  <div className='hover:saturate-200 hover:drop-shadow-2xl'>
+                  <div className='hover:saturate-200'>
                      <h6>
                         
                         <a href={article.url} target="_blank" rel="noreferrer" style={{ 
