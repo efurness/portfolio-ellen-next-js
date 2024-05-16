@@ -10,7 +10,7 @@ function getDate() {
   const year = today.getFullYear();
   const date = today.getDate();
   let d = weekdays[today.getDay()];
-  return `${d}:${month}/${date}/${year}`;
+  return `${d}:  ${month}/${date}/${year}`;
 }
 const NewsFeed = () => {
 const [loading, setLoading] = useState(false);
@@ -36,7 +36,7 @@ const [loading, setLoading] = useState(false);
   return (
     <BannerLayout>
       
-      <div className="mt-10 md:mt-0 text-md text-Snow font-serif text-right">
+      <div className="mt-10 md:mt-0 text-sm text-Snow font-serif text-right">
       <p>{currentDate}</p>
       
     </div>
