@@ -4,11 +4,13 @@ import React, { useEffect, useState } from 'react';
 import Articles from '../components/Articles';
 import axios from 'axios';
 function getDate() {
+  const weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   const today = new Date();
   const month = today.getMonth() + 1;
   const year = today.getFullYear();
   const date = today.getDate();
-  return `${month}/${date}/${year}`;
+  let d = weekdays[today.getDay()];
+  return `${d}:${month}/${date}/${year}`;
 }
 const NewsFeed = () => {
 const [loading, setLoading] = useState(false);
