@@ -30,12 +30,13 @@ const [loading, setLoading] = useState(false);
         getArticles();
 
     }, []);
+    
   return (
     <BannerLayout>
       
-      <div className="mt-10 md:mt-0 text-xl text-Snow font-medium text-center font-serif text-right">
-
+      <div className="mt-10 md:mt-0 text-md text-Snow font-serif text-right">
       <p>{currentDate}</p>
+      
     </div>
       <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold text-center font-serif">
         <div className="p-4">New York Times <span className="text-blue-300 font-bold animate-pulse font-serif">Top Stories</span></div>
