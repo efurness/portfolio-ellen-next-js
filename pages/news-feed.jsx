@@ -10,7 +10,7 @@ function getDate() {
   const year = today.getFullYear();
   const date = today.getDate();
   let d = weekdays[today.getDay()];
-  return `${d}:  ${month}/${date}/${year}`;
+  return `${d} ${month}/${date}/${year}`;
 }
 const NewsFeed = () => {
 const [loading, setLoading] = useState(false);
