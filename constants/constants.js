@@ -2,11 +2,11 @@ export const NAME = 'Ellen D. Furness';
 
 export const DESIGNATION = `Pursuing a GIS Specialist position with Web`;
 
-export const DETAILS = {
-  Residence: 'United States',
-  City: 'Boulder',
-  Age: '52',
-};
+// export const DETAILS = {
+//   Residence: 'United States',
+//   City: 'Boulder',
+//   Age: '52',
+// };
 
 export const SKILLS = [
   {

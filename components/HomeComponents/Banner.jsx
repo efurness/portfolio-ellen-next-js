@@ -15,7 +15,7 @@ const Banner = (props) => {
         className={`absolute inset-0 z-20 flex flex-col items-center py-6 justify-center w-full h-full `}
       >
         <div
-          className={`w-[95%] h-[90%] px-4 py-2 rounded-xl overflow-hidden flex md:block`}
+          className={`${bgColor} w-[95%] h-[90%] px-4 py-2 rounded-xl overflow-hidden flex md:block`}
         >
           <div className="flex items-center md:items-center md:justify-around">
             <div className="">
