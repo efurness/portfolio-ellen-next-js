@@ -33,7 +33,7 @@ export default function Layout(props) {
 
       <div className="lg:hidden">
         <div
-          className={`${textColor} w-full h-10 flex items-center justify-between px-2 lg:hidden relative`}
+          className={`${bgColor} ${textColor} w-full h-10 flex items-center justify-between px-2 lg:hidden relative`}
         >
           <div
             className="icon flex items-center gap-x-2"
