@@ -70,7 +70,7 @@ export default function Layout(props) {
         {intro && (
           <div
             onClick={(e) => setIntro(false)}
-            className="fixed top-0 left-0  w-full h-full bg-black/50 backdrop-blur-[2px] z-40"
+            className="fixed top-0 left-0  w-full h-full  z-40"
           ></div>
         )}
 
