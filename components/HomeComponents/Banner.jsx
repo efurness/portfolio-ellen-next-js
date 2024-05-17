@@ -6,13 +6,13 @@ const Banner = (props) => {
   const textColor = props.theme === "dark" ? "text-Snow" : "text-Black";
   const bgColor = props.theme === "dark" ? "bg-LightGray/10" : "";
   const gradient = props.theme === "dark" ? "from-MidNightBlack" : "from-Snow/10";
-  const textColors = props.theme === "dark" ? "text-Snow" : "text-indigo-200";
+  const textColors = props.theme === "dark" ? "text-Snow" : "text-Snow";
 
   
   return (
     <BannerLayout>
       <div
-        className={`absolute inset-0 z-20 flex flex-col items-center py-6 justify-center w-full h-full bg-gradient-to-t ${gradient}`}
+        className={`absolute inset-0 z-20 flex flex-col items-center py-6 justify-center w-full h-full `}
       >
         <div
           className={`${bgColor} w-[95%] h-[90%] px-4 py-2 rounded-xl overflow-hidden flex md:block`}
@@ -48,8 +48,8 @@ const Banner = (props) => {
                               "ArcGIS Pro",
                               "REACT",
                               "NEXTjs",
-                              "REACT Leaflet, MapView",
-                              "Tailwind, CSS"
+                              "REACT Leaflet",
+                              "Tailwind"
                             ],
                             autoStart: true,
                             loop: true,
