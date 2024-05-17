@@ -86,7 +86,7 @@ const Banner = (props) => {
         <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex items-center justify-between w-full px-4 xl:px-8 2xl:px-16">
           <div className="flex items-center gap-x-1">
             <span className="text-base md:text-lg text-Green font-bold">
-              5+
+              3+
             </span>
             <span className={`text-xs ${textColors}`}>
               Completed REACT NEXTjs Porfolios
@@ -95,21 +95,21 @@ const Banner = (props) => {
 
           <div className="flex items-center gap-x-1">
             <span className="text-base md:text-lg text-Green font-bold">
-              1+
+              2+
             </span>
             <span className={`text-xs ${textColors}`}>Certificates</span>
           </div>
 
           <div className="flex items-center gap-x-1">
             <span className="text-base md:text-lg text-Green font-bold">
-              2+
+              3+
             </span>
             <span className={`text-xs ${textColors}`}>Honors & Awards</span>
           </div>
 
           <div className="flex items-center gap-x-1">
             <span className="text-base md:text-lg text-Green font-bold">
-              8+
+              6+
             </span>
             <span className={`text-xs ${textColors}`}>GIS Projects</span>
           </div>
