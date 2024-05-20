@@ -1,10 +1,11 @@
-
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/portfolio-ellen-next-js" : "";
 const BannerLayout = ({ children }) => {
     return (
         <div
             className="relative w-full h-80 bg-fixed z-10"
             style={{
-                background: 'url(./images/bigsky.png)',
+                background: `url(${basePath}/images/bigsky.png)`,
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
             }}>
