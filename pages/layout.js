@@ -27,7 +27,9 @@ export default function Layout(props) {
               }
             }}
             checked={theme === "light" ? true : false}
+            
           />
+          
         </label>
       </div>
 
