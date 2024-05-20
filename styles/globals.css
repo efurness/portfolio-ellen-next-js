@@ -10,7 +10,15 @@ body {
   overflow: hidden;
   height: 100vh;
 }
+.adjust-height {
+  height: calc(100% - 60px);
+}
 
+@media (min-width: 1024px) {
+  .adjust-height {
+    height: calc(100% - 30px);
+  }
+}
 @layer utilities {
   @layer components {
     .transition {
