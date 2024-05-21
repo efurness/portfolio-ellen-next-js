@@ -11,10 +11,10 @@ body {
   height: 100vh;
 }
 .adjust-height {
-  height: calc(100% - 100px);
+  height: calc(100% - 125px);
 }
 .spacer-sm {
-  height: 100px;
+  height: 125px;
 }
 
 
