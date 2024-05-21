@@ -5,7 +5,7 @@ const LinearBar = ({ title, percent, bgColor  }) => {
     
     return (
         <div className="">
-            <div className="flex justify-between mb-1 spacer-sm">
+            <div className="flex justify-between mb-1">
                 <span className="text-xs ${textColor}">{title}</span>
                 <span className="text-xs ${textColor}">{percent}</span>
             </div>
