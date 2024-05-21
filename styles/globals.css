@@ -13,11 +13,19 @@ body {
 .adjust-height {
   height: calc(100% - 60px);
 }
+.spacer-sm {
+  height: 60px;
+}
+
 
 @media (min-width: 1024px) {
   .adjust-height {
     height: calc(100% - 30px);
   }
+  .spacer-sm {
+    height: 0px;
+  }
+  
 }
 @layer utilities {
   @layer components {

@@ -10,6 +10,7 @@ const Download = ( props ) => {
         <span className={`${textColor}`}>Download Resume</span>
         <span>{props.icon}</span>
       </Link>
+      <div className='spacer-sm'></div>
     </>
   );
 };

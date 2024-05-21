@@ -49,7 +49,7 @@ const Intro = (props) => {
         <Skills />
         <Tools theme={theme} />
         {/* <Contact /> */}
-        <Download icon={<FaDownload />} />
+        <Download theme={theme} icon={<FaDownload />} />
       </div>
 
       {/* fixed at bottom */}
