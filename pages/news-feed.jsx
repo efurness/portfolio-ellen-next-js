@@ -36,7 +36,7 @@ const [loading, setLoading] = useState(false);
   return (
     <BannerLayout>
       
-      <div className="mt-10 md:mt-0 text-sm text-Snow font-serif text-right">
+      <div className="mt-10 md:mt-0 text-sm text-Snow font-serif text-right p-2">
       <p>{currentDate}</p>
       
     </div>
