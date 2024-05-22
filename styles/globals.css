@@ -13,9 +13,9 @@ body {
 .adjust-height {
   height: calc(100% - 175px);
 }
-.spacer-sm {
+/* .spacer-sm {
   height: 175px;
-}
+} */
 
 
 @media (min-width: 1024px) {
