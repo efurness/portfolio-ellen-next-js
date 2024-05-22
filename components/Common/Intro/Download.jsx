@@ -6,7 +6,7 @@ const Download = ( props ) => {
 
   return (
     <>
-      <Link href='/Resume2024.pdf' target='_blank' className={`flex flex-row ${textColor} items-center gap-x-4 md:pb-14 pt-4 pb-[100px]`}>
+      <Link href='/Resume2024.pdf' target='_blank' className={`flex flex-row ${textColor} items-center gap-x-4 md:pb-14 pt-4 pb-[300px]`}>
         <span className={`${textColor}`}>Download Resume</span>
         <span>{props.icon}</span>
       </Link>
