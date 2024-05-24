@@ -15,7 +15,7 @@ export default function Layout(props) {
   const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50";
   
   return (
-    <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none py-1 ${bgColor} S{textColor2}`}>
+    <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none py-1 ${bgColor} S{textColor2}  `}>
       <div className={`theme-switcher ${textColor2} text-sm`}>
         <label style={{ float: "right" }}>
           <Switch
@@ -32,7 +32,7 @@ export default function Layout(props) {
             
           />
 
-            {theme === "light" ? 'light mode'  : 'dark mode'}
+            {theme === "light" ? ' Light mode'  : ' Dark mode'}
         </label>
       </div>
 
