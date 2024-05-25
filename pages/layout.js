@@ -101,7 +101,7 @@ export default function Layout(props) {
             </span>
           </div>
           <span
-            className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 flex items-center justify-center text-center text-xl ${textColor}  font-extrabold tracking-widest`}
+            className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 flex items-center justify-center text-center text-xl ${textColor} ${bgColor} font-extrabold tracking-widest`}
           >
             NavBar
           </span>

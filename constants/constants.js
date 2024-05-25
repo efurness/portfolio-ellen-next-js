@@ -54,3 +54,4 @@ export const SOCIAL_LINKS = {
   GITHUB: 'https://github.com/efurness',
   LINKEDIN: 'https://www.linkedin.com/feed/',
 };
+

@@ -2,15 +2,15 @@ import ExpertiseCard from "./ExpertiseCard";
 
 const expertise = [
   {
-    id: 1,
+    id: 0,
     title: "GIS",
-    desc: "Proficient in GIS Software: ArcGIS Online, ArcGIS Pro and ArcGIS Extensions: Spatial Analyst, QGIS, GoogleEarth, Leaflet, API for Javascript/Python.  Gaining Geospatial Training in Python for ArcGIS Pro, Building Web and Mobile ArcGIS applications with Javascript. I have been working on Story Maps and Experience Builder through Esri ArcGIS.",
+    desc: "Proficient in GIS Software: ArcGIS Online, ArcGIS Pro and ArcGIS Desktop: REACT Leaflet, API for Javascript. Story Maps and Experience Builder through Esri ArcGIS.",
   },
 
   {
-    id: 0,
+    id: 1,
     title: "Full Stack Web Development",
-    desc: "I am a skilled Full-stack Javascript developer with extensive experience in building robust web applications using MongoDB, Express.js, React.js, and Node.js. I possess a strong understanding of server-side rendering, API integration, and database management. With my expertise, I can deliver dynamic and efficient web solutions tailored to meet the unique requirements of clients. ",
+    desc: "I am a skilled in Full-stack Javascript development with experience in building web applications using ExpressJS, ReactJS, NextJS and NodeJS. With my expertise, I can deliver dynamic and efficient web solutions. ",
   },
   {
     id: 2,
@@ -20,13 +20,19 @@ const expertise = [
   {
     id: 3,
     title: "Github/VSCode",
-    desc: "GitHub is essential for version control and collaboration. Its intuitive interface and features like pull requests and issue tracking simplify the process. Continuous integration ensures up-to-date code. GitHub and VSCode are imperative to my success as a developer.",
+    desc: "Experienced using GitHub for developing REACT and NEXT applications using GitHub actions to publish my sites.  My Full-stack Bootcamp Projects consisted of multiple pull requests to simplify the process of development. Continuous integration ensures up-to-date code. GitHub and VSCode are imperative to my success as a developer.",
   },
   {
     id: 4,
     title: "Open Source Contributor",
     desc: "Open Source is the future. I usually take some time on weekend and contribute towards an opensource project. It gives me opportunity to learn from best developer's practices.",
   },
+  {
+    id: 4,
+    title: "Python for GIS",
+    desc: "Geospatial Training in Python for ArcGIS Pro.  Use of Python Window, Notebooks in ArcGIS Pro, Jupyter Notebook, an open-source web application to create documents that contain live Python code and perform analysis and immediately view results in a geographic context",
+  },
+
 ];
 
 const MyExpertise = (props) => {
