@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 .adjust-height {
-  height: calc(100% - 220px);
+  height: calc(100% - 200px);
 }
 /* .spacer-sm {
   height: 175px;
