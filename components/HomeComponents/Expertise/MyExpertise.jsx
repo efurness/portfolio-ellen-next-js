@@ -4,7 +4,7 @@ const expertise = [
   {
     id: 0,
     title: "GIS",
-    desc: "Proficient in GIS Software: ArcGIS Online, ArcGIS Pro and ArcGIS Desktop: REACT Leaflet, API for Javascript. Story Maps and Experience Builder through Esri ArcGIS.",
+    desc: "Proficient in GIS Software: ArcGIS Online, ArcGIS Pro and ArcGIS Desktop, additionally REACT Leaflet and ArcGIS API for Javascript -- building mapping applications for the Web. Utilized Story Maps and Experience Builder through ArcGIS Online.",
   },
 
   {
@@ -15,12 +15,12 @@ const expertise = [
   {
     id: 2,
     title: "Designing (UI/UX)",
-    desc: "I am have a certificate in Web Development and proficient in using design software such as Dreamweaver, PhotoScape X, and Adobe Illustrator. Through participating in freelance work has allowed me to continue to develop my creative skills.",
+    desc: "I am have a certificate in Web Development using design software such as Dreamweaver, PhotoScape X, and Adobe Illustrator. CSS and TailwindCSS have allowed me to to continously develop my creative skills.",
   },
   {
     id: 3,
     title: "Github/VSCode",
-    desc: "Experienced using GitHub for developing REACT and NEXT applications using GitHub actions to publish my sites.  My Full-stack Bootcamp Projects consisted of multiple pull requests to simplify the process of development. Continuous integration ensures up-to-date code. GitHub and VSCode are imperative to my success as a developer.",
+    desc: "Experience using GitHub for developing REACT and NEXT applications and using GitHub actions to publish my sites.  My Bootcamp Projects consisted of multiple pull requests to simplify the process of development. Continuous integration ensures up-to-date code. GitHub and VSCode are imperative to my success as a developer.",
   },
   {
     id: 4,
