@@ -28,7 +28,7 @@ const expertise = [
     desc: "Open Source is the future. I usually take some time on weekend and contribute towards an opensource project. It gives me opportunity to learn from best developer's practices.",
   },
   {
-    id: 4,
+    id: 5,
     title: "Python for GIS",
     desc: "Geospatial Training in Python for ArcGIS Pro.  Use of Python Window, Notebooks in ArcGIS Pro, Jupyter Notebook, an open-source web application to create documents that contain live Python code and perform analysis and immediately view results in a geographic context",
   },
