@@ -12,7 +12,7 @@ const DrawerLayout = ({ setIsOpen, isOpen, children }) => {
         >
             <section
                 className={
-                    "w-screen max-w-[260px] right-0 absolute h-screen shadow-xl delay-400 duration-500 ease-in-out transition-all transform  " +
+                    "w-screen max-w-[260px] right-0 absolute h-screen shadow-xl delay-400 duration-500 ease-in-out transition-all transform " +
                     (isOpen ? " translate-x-0 " : " translate-x-full ")
                 }
             >

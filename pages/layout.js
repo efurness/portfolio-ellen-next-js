@@ -11,11 +11,12 @@ export default function Layout(props) {
   const theme = props.theme,
     setTheme = props.setTheme;
   const textColor = theme === "dark" ? "text-Snow" : "text-black";
-  const textColor2 = theme === "dark" ? "text-Snow" : "text-blue-500"
-  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50";
+  const textColor2 = theme === "dark" ? "text-Snow" : "text-blue-600"
+  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50"
+  
   
   return (
-    <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none py-1 ${bgColor} S{textColor2}  `}>
+    <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none py-1 ${bgColor} S{textColor2}`}>
       <div className={`theme-switcher ${textColor2} text-sm`}>
         <label style={{ float: "right" }}>
           <Switch

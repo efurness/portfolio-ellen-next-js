@@ -6,6 +6,7 @@ import { HiIdentification } from "react-icons/hi";
 import NavItem from "./NavItem";
 import DrawerLayout from "../DrawerLayout";
 
+
 const Nav = ({ setIsOpen, isOpen }) => {
   return (
     <DrawerLayout setIsOpen={setIsOpen} isOpen={isOpen}>
