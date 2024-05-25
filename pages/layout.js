@@ -33,7 +33,7 @@ export default function Layout(props) {
             
           />
 
-            {theme === "light" ? ' Light mode'  : ' Dark mode'}
+            {theme === "light" ? ' Light mode '  : ' Dark mode '}
         </label>
       </div>
 
