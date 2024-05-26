@@ -20,7 +20,7 @@ const recommendations = [
   {
     id: 2,
     name: "Mrs. Shelley Levine",
-    image: "images/romeo.jpg",
+    image: "images/Romeo.jpg",
     designation:
       "Cranial Sacral Therapist | Trauma Recovery Specialist | Life Coach",
     view: "As a close friend and professional confidant, I have experienced Ellen as a very bright, productive ambitious person, who diligently works always up to a new challenge. Ellen not only learns new technologies in depth with great speed, she also raises the bar as her standards are high and never cease to reflect her superlative talent! My field as a Holistic practitioner, I meet a wide variety of people. Ellen is most impressive and would undoubtedly be a great asset for the fortunate company that hires Ellen.🌟",
