@@ -11,6 +11,38 @@ const Banner = (props) => {
   
   return (
     <BannerLayout>
+              <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex items-center justify-between w-full px-4 xl:px-8 2xl:px-16">
+          <div className="flex items-center gap-x-1">
+            <span className="text-base md:text-lg text-Green font-bold">
+              3+
+            </span>
+            <span className={`text-xs ${textColors}`}>
+              Completed REACT NEXTjs Porfolios
+            </span>
+          </div>
+
+          <div className="flex items-center gap-x-1">
+            <span className="text-base md:text-lg text-Green font-bold">
+              2+
+            </span>
+            <span className={`text-xs ${textColors}`}>Certificates</span>
+          </div>
+
+          <div className="flex items-center gap-x-1">
+            <span className="text-base md:text-lg text-Green font-bold">
+              3+
+            </span>
+            <span className={`text-xs ${textColors}`}>Honors & Awards</span>
+          </div>
+
+          <div className="flex items-center gap-x-1">
+            <span className="text-base md:text-lg text-Green font-bold">
+              6+
+            </span>
+            <span className={`text-xs ${textColors}`}>GIS Projects</span>
+          </div>
+        </div>
+
       <div
         className={`absolute inset-0 z-20 flex flex-col items-center py-6 justify-center w-full h-full `}
       >
@@ -83,37 +115,6 @@ const Banner = (props) => {
         </div>
 
         {/* details in row */}
-        <div className="grid grid-cols-2 gap-4 md:gap-0 md:flex items-center justify-between w-full px-4 xl:px-8 2xl:px-16">
-          <div className="flex items-center gap-x-1">
-            <span className="text-base md:text-lg text-Green font-bold">
-              3+
-            </span>
-            <span className={`text-xs ${textColors}`}>
-              Completed REACT NEXTjs Porfolios
-            </span>
-          </div>
-
-          <div className="flex items-center gap-x-1">
-            <span className="text-base md:text-lg text-Green font-bold">
-              2+
-            </span>
-            <span className={`text-xs ${textColors}`}>Certificates</span>
-          </div>
-
-          <div className="flex items-center gap-x-1">
-            <span className="text-base md:text-lg text-Green font-bold">
-              3+
-            </span>
-            <span className={`text-xs ${textColors}`}>Honors & Awards</span>
-          </div>
-
-          <div className="flex items-center gap-x-1">
-            <span className="text-base md:text-lg text-Green font-bold">
-              6+
-            </span>
-            <span className={`text-xs ${textColors}`}>GIS Projects</span>
-          </div>
-        </div>
       </div>
     </BannerLayout>
   );
