@@ -17,7 +17,7 @@ const Banner = (props) => {
               3+
             </span>
             <span className={`text-xs ${textColors}`}>
-              Completed REACT NEXTjs Porfolios
+              REACT NextJS Projects
             </span>
           </div>
 
