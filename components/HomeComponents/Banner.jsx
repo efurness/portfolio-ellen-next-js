@@ -103,7 +103,7 @@ const Banner = (props) => {
                 smooth={true}
                 duration={500}
                 offset={-50}
-                className="button bg-gradient-to-r from-green-400 to-blue-500 hover:from-purple-500 hover:to-blue-500"
+                className="button bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-purple-500"
               >
                 Explore
               </Link>
