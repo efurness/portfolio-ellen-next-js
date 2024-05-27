@@ -17,7 +17,7 @@ export default function Layout(props) {
   
   return (
     <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none py-1 ${bgColor} S{textColor2} `}>
-      <div className={`theme-switcher ${textColor2} text-sm font-semibold pb-4  `}>
+      <div className={`theme-switcher ${textColor2} text-sm font-semibold`}>
         <label style={{ float: "left" }}>
           <Switch
             onChange={() => {
