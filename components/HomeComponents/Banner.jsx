@@ -98,7 +98,7 @@ const Banner = (props) => {
                 </div>
               </div>
               <Link 
-                to="intro"
+                to=""
                 spy={true}
                 smooth={true}
                 duration={500}
