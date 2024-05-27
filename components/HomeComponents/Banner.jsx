@@ -97,13 +97,13 @@ const Banner = (props) => {
                   </span>
                 </div>
               </div>
-              <Link
+              <Link 
                 to="intro"
                 spy={true}
                 smooth={true}
                 duration={500}
                 offset={-50}
-                className="button"
+                className="button bg-gradient-to-r from-green-400 to-blue-500 hover:from-purple-500 hover:to-blue-500"
               >
                 Explore
               </Link>
