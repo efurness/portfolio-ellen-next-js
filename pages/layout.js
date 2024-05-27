@@ -11,7 +11,7 @@ export default function Layout(props) {
   const theme = props.theme,
     setTheme = props.setTheme;
   const textColor = theme === "dark" ? "text-Snow" : "text-black";
-  const textColor2 = theme === "dark" ? "text-Snow" : "text-blue-600"
+  const textColor2 = theme === "dark" ? "text-Snow" : "text-blue-700"
   const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50"
   
   
