@@ -9,7 +9,7 @@ const NavItem = ({ NavIcon, NavText, NavRoute, setIsOpen, theme }) => {
   const router = useRouter();
   const className =
     router.asPath === `${NavRoute}`
-      ? "rounded-xl !text-DeepNightBlack bg-green-300 font-bold tracking-widest"
+      ? "rounded-xl !text-DeepNightBlack bg-green-200 font-bold tracking-widest"
       : "";
 
   return (
