@@ -7,13 +7,18 @@ import NavItem from "./NavItem";
 import DrawerLayout from "../DrawerLayout";
 
 
-const Nav = ({ setIsOpen, isOpen }) => {
+const Nav = ({ setIsOpen, isOpen, theme }) => {
+  const textColor = theme === "dark" ? "text-Snow" : "text-blue-600";
+  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50"
+
+
+
   return (
     <DrawerLayout setIsOpen={setIsOpen} isOpen={isOpen}>
-      <div className="absolute z-50 flex flex-col justify-center lg:inset-y-0  -right-0 lg:right-0 w-64 h-screen lg:mt-3 lg:mr-3 lg:h-[96%] bg-DeepNightBlack shadow-2xl md:rounded-xl md:overflow-hidden">
+      <div className={`absolute z-50 flex flex-col justify-center lg:inset-y-0  -right-0 lg:right-0 w-64 h-screen lg:mt-3 lg:mr-3 lg:h-[96%] ${bgColor} shadow-2xl md:rounded-xl md:overflow-hidden`}>
         <div
           onClick={(e) => setIsOpen(false)}
-          className="flex text-LightGray absolute top-0 w-full items-center justify-start pl-6 text-sm h-10 bg-EveningBlack"
+          className={`flex ${textColor} absolute top-0 w-full items-center justify-start pl-6 text-sm h-10 ${bgColor}`}
         >
           <ImCross />
         </div>
@@ -23,6 +28,7 @@ const Nav = ({ setIsOpen, isOpen }) => {
             NavRoute={"/"}
             NavIcon={<ImHome />}
             NavText={"Home"}
+            theme={theme}
           />
           {/* <NavItem
             setIsOpen={setIsOpen}
@@ -35,6 +41,8 @@ const Nav = ({ setIsOpen, isOpen }) => {
             NavRoute={"/background"}
             NavIcon={<HiIdentification />}
             NavText={"Background"}
+            theme={theme}
+
           />
           {/* <NavItem
             setIsOpen={setIsOpen}
@@ -47,6 +55,8 @@ const Nav = ({ setIsOpen, isOpen }) => {
             NavRoute={"/news-feed"}
             NavIcon={<FiAward />}
             NavText={"News Feed"}
+            theme={theme}
+
           />
         </div>
       </div>
