@@ -6,11 +6,11 @@ import PortfolioCard from "../components/Portfolio/PortfolioCard";
 const portfolio = [
   {
     id: 0,
-    projectName: "Spokes Boulder (Spokes People)",
+    projectName: "Spokes Boulder",
     url: "https://efurness.github.io/spokes-people/",
     image: "projects/spokesProject.png",
     projectDetail:
-      "Spokes Boulder is a REACT Javascript client-side project branched from Spokes People, a project from University of Denver Web Development Bootcamp.",
+      "Spokes Boulder is a REACT Javascript client-side project using REACT leaflet to indicate bike availability in stations throughtout Boulder and Denver.  The data comes from a Rapid API City Bikes.",
     technologiesUsed: [
       {
         tech: "React",
