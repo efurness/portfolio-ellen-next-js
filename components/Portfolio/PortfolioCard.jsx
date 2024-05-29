@@ -1,25 +1,39 @@
 import Badge from "../Common/Badge"
+import CardLayout from "../Common/CardLayout"
 
-const PortfolioCard = ({ data }) => {
+
+const PortfolioCard = ( props) => {
+    const data = props.data;
+
+
+    const textColor = props.theme === "dark" ? "text-Snow" : "text-Black";
+    const bgColor = props.theme === "dark" ? "bg-DeepNightBlack" : "bg-Green";
+    const bgColor2 = props.theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50"
+    const bgColor3 = props.theme === "dark" ? "bg-DeepNightBlack" : "bg-Green";
+    const hoverColor = props.theme === "dark" ? "hover:bg-green-100" : "hover:bg-green-200";
+
+  
     return (
-        <div className="card_stylings overflow-hidden h-full">
+        <CardLayout>
+        <div className={`${bgColor3} card_stylings overflow-hidden h-full`}>
             <img
                 src={data?.image}
                 alt="portfolio img"
-                className="w-full object-cover opacity-30 h-32 sm:h-48 md:h-64"
+                className="w-full object-cover h-32 sm:h-48 md:h-64"
             />
-            <div id="arrow" className="py-2 px-6 card_stylings hover:-translate-y-10 transition-all ease-in-out duration-500">
+            <div id="arrow" className={`py-2 px-6 ${bgColor2} card_stylings hover:-translate-y-10 transition-all ease-in-out duration-500 `}>
                 <div className="flex justify-between p-0 m-0 ">
-                    <h3 className="mr-2 underline italic font-semibold pt-2 text-2xl text-Snow leading-tight sm:leading-normal">
+                    <h3 className={`mr-2 underline italic font-semibold pt-2 text-2xl ${textColor} leading-tight sm:leading-normal`}>
                         <a
                             href={data?.url}
                             target="_blank"
                             rel="noreferrer"
                         >
                             {data?.projectName}
+                            
                         </a>
                     </h3>
-                    <div className="text-Snow transition duration-500 hover:text-yellow transform hover:-translate-y-1 hover:scale-110 pt-4 text-base">
+                    <div className={`${textColor} transition duration-500 ${hoverColor} transform hover:-translate-y-1 hover:scale-110 pt-4 text-base`}>
                         <a
                             href={data?.url}
                             target="_blank"
@@ -44,7 +58,7 @@ const PortfolioCard = ({ data }) => {
                         </a>
                     </div>
                 </div>
-                <p className="text-xs text-LightGray font-normal">
+                <p className={`text-xs ${textColor} font-normal`}>
                     {data?.projectDetail}
                 </p>
                 <div className="text-sm flex flex-wrap gap-3 py-2">
@@ -52,6 +66,7 @@ const PortfolioCard = ({ data }) => {
                 </div>
             </div>
         </div>
+        </CardLayout>
     )
 }
 

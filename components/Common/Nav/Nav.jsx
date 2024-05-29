@@ -44,12 +44,14 @@ const Nav = ({ setIsOpen, isOpen, theme }) => {
             theme={theme}
 
           />
-          {/* <NavItem
+          <NavItem
             setIsOpen={setIsOpen}
             NavRoute={"/portfolio"}
             NavIcon={<FiAward />}
-            NavText={"Portfolio"}
-          /> */}
+            NavText={"Portfolio 🌟"}
+            theme={theme}
+
+          />
           <NavItem
             setIsOpen={setIsOpen}
             NavRoute={"/news-feed"}
