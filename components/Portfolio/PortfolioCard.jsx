@@ -35,12 +35,13 @@ const PortfolioCard = ( props ) => {
                             href={data?.url}
                             target="_blank"
                             rel="noreferrer"
+                            theme={theme}
                         >
                             {data?.projectName}
                             
                         </a>
                     </h3>
-                    <div className={`${textColor} transition duration-500 ${hoverColor} transform hover:-translate-y-1 hover:scale-110 pt-4 text-base font-serif`}>
+                    <div className={`${textColor} transition duration-500  transform hover:-translate-y-1 hover:scale-110 pt-4 text-base font-serif`}>
                         <a
                             href={data?.url}
                             target="_blank"
@@ -69,7 +70,7 @@ const PortfolioCard = ( props ) => {
                     {data?.projectDetail}
                 </p>
                 <div className="text-sm flex flex-wrap gap-3 py-2">
-                    {data.technologiesUsed.map((index, key) => <Badge key={key} title={index.tech}  />)}
+                    {data.technologiesUsed.map((index, key) => <Badge key={key} title={index.tech} theme={theme} />)}
                 </div>
             </div>
         </div>
