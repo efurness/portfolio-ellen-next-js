@@ -2,9 +2,10 @@ import Badge from "../Common/Badge"
 import CardLayout from "../Common/CardLayout"
 
 
-const PortfolioCard = ( props) => {
+const PortfolioCard = ( props ) => {
     const data = props.data;
     const theme = props.theme;
+
 
 
     const textColor = theme === "dark" ? "text-Snow" : "text-DeepNightBlack";
@@ -15,7 +16,8 @@ const PortfolioCard = ( props) => {
 
   
     return (
-        <CardLayout>
+        
+        <CardLayout > 
         <div className={`${bgColor3} border-Green border-2 card_stylings overflow-hidden h-full`}>
         <a href={data?.url}
                             target="_blank"
@@ -67,7 +69,7 @@ const PortfolioCard = ( props) => {
                     {data?.projectDetail}
                 </p>
                 <div className="text-sm flex flex-wrap gap-3 py-2">
-                    {data.technologiesUsed.map((index, key) => <Badge key={key} title={index.tech} />)}
+                    {data.technologiesUsed.map((index, key) => <Badge key={key} title={index.tech}  />)}
                 </div>
             </div>
         </div>
