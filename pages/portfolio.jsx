@@ -8,7 +8,7 @@ const portfolio = [
     id: 0,
     projectName: "Spokes Boulder",
     url: "https://efurness.github.io/spokes-people/",
-    image: "projects/spokesProject.png",
+    image: "projects/bikePortfolio.png",
     projectDetail:
       "Spokes Boulder is a REACT Javascript client-side project using REACT leaflet to indicate bike availability in stations throughtout Boulder and Denver.  The data comes from a Rapid API City Bikes.",
     technologiesUsed: [
