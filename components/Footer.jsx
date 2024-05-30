@@ -20,7 +20,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             
-            <span className="text-right">🌟 REACT</span>
+            <span className="text-right">🌟</span>
             
           </a>
         </div>
