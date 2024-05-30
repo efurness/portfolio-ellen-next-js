@@ -17,7 +17,7 @@ const PortfolioCard = ( props ) => {
   
     return (
         
-        <CardLayout > 
+        <CardLayout> 
         <div className={`${bgColor3} border-Green border-2 card_stylings overflow-hidden h-full`}>
         <a href={data?.url}
                             target="_blank"
@@ -28,9 +28,9 @@ const PortfolioCard = ( props ) => {
                 alt="portfolio img"
                 className="w-full object-cover h-32 sm:h-48 md:h-64"
             /></a>
-            <div id="arrow" className={`py-2 px-6 ${bgColor2} border-Green border-1 card_stylings hover:-translate-y-10 transition-all ease-in-out duration-500 `}>
+            <div id="arrow" className={`py-2 px-6 ${bgColor2} border-Green border-1 card_stylings hover:-translate-y-10 transition-all ease-in-out duration-500 font-serif `}>
                 <div className="flex justify-between p-0 m-0 ">
-                    <h3 className={`mr-2 underline italic font-semibold pt-2 text-2xl ${textColor} leading-tight sm:leading-normal`}>
+                    <h3 className={`mr-2 underline italic font-semibold pt-2 text-2xl ${textColor} font-serif leading-tight sm:leading-normal`}>
                         <a
                             href={data?.url}
                             target="_blank"
@@ -40,7 +40,7 @@ const PortfolioCard = ( props ) => {
                             
                         </a>
                     </h3>
-                    <div className={`${textColor} transition duration-500 ${hoverColor} transform hover:-translate-y-1 hover:scale-110 pt-4 text-base`}>
+                    <div className={`${textColor} transition duration-500 ${hoverColor} transform hover:-translate-y-1 hover:scale-110 pt-4 text-base font-serif`}>
                         <a
                             href={data?.url}
                             target="_blank"
