@@ -12,12 +12,13 @@ const Footer = () => {
           <span>2024 All Rights Reserved.</span>
         </div>
         <div className="flex items-center">
+        Made with ❤️ by <span className="font-bold">Monty-Asp</span>
           <a
-            href=""
+            href="https://efurness.github.io/ellen-s-react-portfolio/"
             target="_blank"
             rel="noreferrer"
           >
-            Made with ❤️ by <span className="font-bold">Monty-Asp</span>
+             <span className="italic font-light p-2">go to my original REACT Portfolio!</span>
             
           </a>
         </div>
