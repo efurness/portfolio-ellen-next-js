@@ -35,7 +35,7 @@ const PortfolioCard = ( props ) => {
                             href={data?.url}
                             target="_blank"
                             rel="noreferrer"
-                            theme={theme}
+                            
                         >
                             {data?.projectName}
                             

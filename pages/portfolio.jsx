@@ -160,7 +160,9 @@ const portfolio = [
   // },
 ];
 
-const Portfolio = () => {
+const Portfolio = ( props ) => {
+  const theme = props.theme;
+
   return (
     <BannerLayout>
       <div className="mt-10 md:mt-0 text-2xl text-Snow font-semibold text-center font-serif text-center p-4"> Portfolio <span className="text-blue-300 font-bold animate-pulse font-serif ">2024</span></div>
