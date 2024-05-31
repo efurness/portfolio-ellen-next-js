@@ -12,7 +12,7 @@ const Footer = () => {
           <span>2024 All Rights Reserved.</span>
         </div>
         <div className="flex items-center">
-        Made with ❤️ by <span className="font-bold">Monty-Asp</span></div>
+        Made with ❤️  <span className="font-bold">Monty-Asp</span></div>
 
           <a
             href="https://efurness.github.io/ellen-s-react-portfolio/"
