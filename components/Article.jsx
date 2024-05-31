@@ -3,14 +3,8 @@ import PropTypes from 'prop-types';
 import { ZoomIn } from '@material-ui/icons';
 import { SlCalender } from 'react-icons/sl';
 
-const Article = ( props ) => {
-    const article = props.article;
-    const theme = props.theme;
-
-    const textColor = theme === "dark" ? "text-Snow" : "text-DeepNightBlack";
-    const bgColor = props.theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50";
-
-
+const Article = ({ article }) => {
+    
     return (<div
     style={{
         maxWidth: 800,
@@ -22,16 +16,16 @@ const Article = ( props ) => {
     }}>
         
 
-                  <div className={`hover:saturate-150 ${bgColor}`}>
+                  <div className='hover:saturate-150'>
                      <h6>
                         
-                        <a href={props.article.url} target="_blank" rel="noreferrer" style={{ 
+                        <a href={article.url} target="_blank" rel="noreferrer" style={{ 
                             textDecoration: 'none',
                             color: "#3f77b7" }}><img src={article.multimedia?.[0]?.url ?
                                 `${article.multimedia[0].url}` : 
                               'https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg'
                            } alt="news-img" />
-                          <span className={`${bgColor} p-2 inline-block`}>{props.article.title}</span>
+                          <span className='p-2 inline-block'>{article.title}</span>
                           </a>
                  </h6>
                  {/* <h4>
