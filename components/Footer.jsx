@@ -20,9 +20,19 @@ const Footer = () => {
             rel="noreferrer"
           >
             
-            <span className="text-right">🌟</span>
+            <span className="text-right"><img src="images/react.png" alt="react image" /></span>
             
           </a>
+          <a
+            href="https://storymaps.arcgis.com/stories/32404e9d37564136bb64c1cfc354d9a2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            
+            <span className="text-right"><img src="images/storymap.png" alt="story map image" /></span>
+            
+          </a>
+
         </div>
         <div className="hidden md:flex items-center">
           <div className="mr-1 text-base">
