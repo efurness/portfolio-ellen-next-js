@@ -28,9 +28,9 @@ const PortfolioCard = ( props ) => {
                 alt="portfolio img"
                 className="w-full object-cover h-32 sm:h-48 md:h-64"
             /></a>
-            <div id="arrow" className={`py-2 px-6 ${bgColor2} border-Green border-1 card_stylings hover:-translate-y-10 transition-all ease-in-out duration-500 font-serif `}>
+            <div id="arrow" className={`py-2 px-6 ${bgColor2} border-Green border-1 card_stylings hover:-translate-y-10 transition-all ease-in-out duration-500 `}>
                 <div className="flex justify-between p-0 m-0 ">
-                    <h3 className={`mr-2 underline italic font-semibold pt-2 text-2xl ${textColor} font-serif leading-tight sm:leading-normal`}>
+                    <h3 className={`mr-2 underline italic font-semibold pt-2 text-2xl ${textColor} leading-tight sm:leading-normal`}>
                         <a
                             href={data?.url}
                             target="_blank"
