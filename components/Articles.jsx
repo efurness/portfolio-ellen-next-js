@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     },
 });
 
-export default function Articles({ loading, articles }) {
+export default function Articles({ loading, articles, theme }) {
     const classes = useStyles();
 
     return (
@@ -29,7 +29,7 @@ export default function Articles({ loading, articles }) {
                             <Grid container spacing={3}>
                                 {articles.map((article) => (
                                     <Grid item xs={12} sm={4} key={article._id}>
-                                        <Article article={article} />
+                                        <Article article={article} theme={theme} />
                                     </Grid>
                                 ))}
                             </Grid>
