@@ -4,11 +4,11 @@ import CardLayout from "../../Common/CardLayout";
 const RecommendationCard = (props) => {
   const data = props.data;
   const textColor = props.theme === "dark" ? "text-Snow" : "text-Black";
-  const bgColor = props.theme === "dark" ? "bg-LightGray/10" : "bg-Green";
+  const bgColor = props.theme === "dark" ? "bg-LightGray/10" : "bg-green-400";
   return (
     <CardLayout>
       <div
-        className={`${bgColor} p-8 h-full relative card_stylings transition opacity-75`}
+        className={`${bgColor} p-8 h-full relative card_stylings transition`}
       >
         <img
           src={data?.image}
