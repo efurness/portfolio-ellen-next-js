@@ -20,8 +20,8 @@ const Article = ({ article }) => {
                      <h6>
                         
                         <a href={article.url} target="_blank" rel="noreferrer" style={{ 
-                            textDecoration: 'none',
-                            color: "#3f77b7" }}><img src={article.multimedia?.[0]?.url ?
+                            textDecoration: 'none', 
+                            color: "#2463eb" }}><img src={article.multimedia?.[0]?.url ?
                                 `${article.multimedia[0].url}` : 
                               'https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg'
                            } alt="news-img" />
