@@ -8,17 +8,17 @@ const background = [
     eduCards: [
       {
         id: 0,
-        title: "University of Denver, Bootcamp",
+        title: "University of Denver",
         degree: "Certificate: Full-stack Javascript Web Development",
-        detail:
-          "HTML/CSS | NODE.js | REACT | Full-Stack Projects",
+        detail: "HTML/CSS | NODE.js | REACT | Full-Stack Projects",
         year: "2022",
       },
       {
         id: 0,
         title: "University of Denver",
         degree: "M.Sc., Geographic Information Systems, Science",
-        detail: "Teaching Assistantship | Geographic Research Design | GPS for Resource Mapping | GIS Modeling, Applications | Biogeography ",
+        detail:
+          "Teaching Assistantship | Geographic Research Design | GPS for Resource Mapping | GIS Modeling, Applications | Biogeography ",
         year: "2006",
       },
       {
@@ -37,14 +37,13 @@ const background = [
           "Mammology | Field analysis of Geological Structures | Organismal Biology & Ecology",
         year: "1989",
       },
-
     ],
   },
   {
     expCards: [
       {
         id: 1,
-        title: "National Park Service, Air Resources Division",
+        title: "National Park Service",
         role: "GIS assistant, Frontend Developor, Biological Research",
         url: "https://www.nps.gov/orgs/1971/index.htm",
         desc: "Assisted Webmaster in the design and maintenance of the Air Resources Division using Adobe Dreamweaver/ColdFusion. Created GIS maps, reports and documents. Assisted Chief Biologist in analysis of air pollution in National Parks.",
@@ -53,7 +52,7 @@ const background = [
       },
       {
         id: 3,
-        title: "Colorado College Geology Department",
+        title: "Colorado College, Geology",
         role: "Web Builder",
         url: "https://www.coloradocollege.edu/academics/dept/geology/",
         desc: "Developed Geology Departments website including Professors' homepages and Antarctica website ISES using Dreamweaver, CSS and HTML.",
