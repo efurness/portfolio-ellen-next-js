@@ -6,16 +6,15 @@ import { HiIdentification } from "react-icons/hi";
 import NavItem from "./NavItem";
 import DrawerLayout from "../DrawerLayout";
 
-
 const Nav = ({ setIsOpen, isOpen, theme }) => {
   const textColor = theme === "dark" ? "text-Snow" : "text-blue-600";
-  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50"
-
-
+  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50";
 
   return (
     <DrawerLayout setIsOpen={setIsOpen} isOpen={isOpen}>
-      <div className={`absolute z-50 flex flex-col justify-center lg:inset-y-0  -right-0 lg:right-0 w-64 h-screen lg:mt-3 lg:mr-3 lg:h-[96%] ${bgColor} shadow-2xl md:rounded-xl md:overflow-hidden`}>
+      <div
+        className={`absolute z-50 flex flex-col justify-center lg:inset-y-0  -right-0 lg:right-0 w-64 h-screen lg:mt-3 lg:mr-3 lg:h-[96%] ${bgColor} shadow-2xl md:rounded-xl md:overflow-hidden`}
+      >
         <div
           onClick={(e) => setIsOpen(false)}
           className={`flex ${textColor} absolute top-0 w-full items-center justify-start pl-6 text-sm h-10 ${bgColor}`}
@@ -42,7 +41,6 @@ const Nav = ({ setIsOpen, isOpen, theme }) => {
             NavIcon={<HiIdentification />}
             NavText={"Background"}
             theme={theme}
-
           />
           <NavItem
             setIsOpen={setIsOpen}
@@ -50,7 +48,6 @@ const Nav = ({ setIsOpen, isOpen, theme }) => {
             NavIcon={<FiAward />}
             NavText={"Portfolio 🌟"}
             theme={theme}
-
           />
           <NavItem
             setIsOpen={setIsOpen}
@@ -58,7 +55,6 @@ const Nav = ({ setIsOpen, isOpen, theme }) => {
             NavIcon={<FiAward />}
             NavText={"News Feed"}
             theme={theme}
-
           />
         </div>
       </div>

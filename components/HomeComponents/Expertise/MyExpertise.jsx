@@ -32,7 +32,6 @@ const expertise = [
     title: "Python for GIS",
     desc: "Geospatial Training in Python for ArcGIS Pro.  Use of Python Window, Notebooks in ArcGIS Pro, Jupyter Notebook, an open-source web application to create documents that contain live Python code and perform analysis and immediately view results in a geographic context",
   },
-
 ];
 
 const MyExpertise = (props) => {

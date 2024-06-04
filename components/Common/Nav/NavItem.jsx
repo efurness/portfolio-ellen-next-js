@@ -4,7 +4,8 @@ import React from "react";
 
 const NavItem = ({ NavIcon, NavText, NavRoute, setIsOpen, theme }) => {
   const textColor = theme === "dark" ? "text-Snow" : "text-blue-600";
-  const hoverColor = theme === "dark" ? "hover:bg-gray-700" : "hover:bg-blue-200";
+  const hoverColor =
+    theme === "dark" ? "hover:bg-gray-700" : "hover:bg-blue-200";
 
   const router = useRouter();
   const className =

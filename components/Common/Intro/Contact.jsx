@@ -2,7 +2,7 @@ import React from "react";
 import { CONTACTS } from "../../../constants/constants";
 import Link from "next/link";
 
-const Contact = ( props ) => {
+const Contact = (props) => {
   const textColor = props.theme === "dark" ? "text-Snow" : "text-Black";
   const bgColor = props.theme === "dark" ? "bg-DeepNightBlack" : "bg-Green";
 
@@ -18,7 +18,6 @@ const Contact = ( props ) => {
       <div className="flex flex-col">
         <span className={`${textColor} text-xs font-bold`}>Phone</span>
         <span className={`text-xs text-gray-600`}>{CONTACTS.PHONE}</span>
-        
       </div>
     </div>
   );
