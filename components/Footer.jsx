@@ -12,7 +12,7 @@ const Footer = () => {
           <span>2024</span>
         </div>
         <div className="flex items-center">
-          Made with ❤️ <span className="font-bold"> Monty-Asp</span>
+          Made with ❤️ <span className="font-bold"> &nbsp; Monty-Asp</span>
         </div>
 
         <a
