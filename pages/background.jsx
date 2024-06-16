@@ -76,7 +76,7 @@ function Background(props) {
   const theme = props.theme;
   return (
     <BannerLayout>
-      <div className="grid md:grid-cols-2 md:divide-x-4 md:divide-Green px-4 pb-2 pt-10">
+      <div className="grid md:grid-cols-2 md:divide-x-4 md:divide-Green px-4 pb-2 pt-10 max-[440px]:grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))]">
         <div className="flex flex-col gap-y-4 order-2 md:order-1  md:mr-12">
           <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold">
             Education
