@@ -2,6 +2,8 @@ import BannerLayout from "../components/Common/BannerLayout";
 import Footer from "../components/Footer";
 import React, { useEffect, useState } from "react";
 import Articles from "../components/Articles";
+import Weather from "../components/Weather";
+
 import axios from "axios";
 function getDate() {
   const weekdays = [
@@ -20,6 +22,7 @@ function getDate() {
   let d = weekdays[today.getDay()];
   return `${d} ${month}/${date}/${year}`;
 }
+
 const NewsFeed = (props) => {
   const [loading, setLoading] = useState(false);
   const [articles, setArticles] = useState([]);
@@ -43,9 +46,10 @@ const NewsFeed = (props) => {
 
   return (
     <BannerLayout>
-      <div className="mt-10 md:mt-0 text-sm text-Snow font-serif text-right p-1">
+      <div className="mt-10 md:mt-0 text-md text-Snow font-serif text-right p-1">
         <p>{currentDate}</p>
       </div>
+      <Weather />
       <div className="mt-10 md:mt-0 text-2xl text-Snow  text-center">
         <div className="p-4 font-serif font-semibold">
           New York Times{" "}
@@ -61,5 +65,4 @@ const NewsFeed = (props) => {
     </BannerLayout>
   );
 };
-
 export default NewsFeed;
