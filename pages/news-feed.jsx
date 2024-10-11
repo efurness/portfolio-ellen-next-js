@@ -46,10 +46,11 @@ const NewsFeed = (props) => {
 
   return (
     <BannerLayout>
+      <Weather />
+
       <div className="mt-10 md:mt-0 text-md text-Snow font-serif text-right p-1">
         <p>{currentDate}</p>
       </div>
-      <Weather />
       <div className="mt-10 md:mt-0 text-2xl text-Snow  text-center">
         <div className="p-4 font-serif font-semibold">
           New York Times{" "}

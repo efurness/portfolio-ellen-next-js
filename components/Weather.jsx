@@ -10,12 +10,24 @@ const Weather = () => {
       const resJson = await response.json();
       setCity(resJson.main);
     };
+
+    fetchApi();
+  }, [search]);
+
+  useEffect(() => {
+    const fetchApi = async () => {
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=imperial&appid=c8f8824f82f862c7696a070f2a1a8586`;
+      const response = await fetch(url);
+      const resJson = await response.json();
+      setCity(resJson.main);
+    };
+
     fetchApi();
   }, [search]);
 
   return (
     <div className="p-4 font-serif text-left indent-1">
-      <h1 className="text-white">Weather Today</h1>
+      <h1 className="text-white">Temps Today</h1>
       <input
         type="search"
         className="InputField indent-1"
