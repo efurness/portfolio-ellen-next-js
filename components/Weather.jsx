@@ -14,27 +14,23 @@ const Weather = () => {
   }, [search]);
 
   return (
-    <div className="p-4 font-serif">
+    <div className="p-4 font-serif text-left indent-1">
+      <h1 className="text-white">Weather Today</h1>
       <input
         type="search"
-        className="InputField"
+        className="InputField indent-1"
         onChange={(event) => {
           setSearch(event.target.value);
         }}
       />
       {!city ? (
         <div>
-          <h3>
-            <b>No Data Found</b>
-          </h3>
+          <h3 className="text-white">Enter your city</h3>
         </div>
       ) : (
         <div>
-          <div>
-            <h2 text-blue-300>
-              <i></i>
-              {search}
-            </h2>
+          <div className="text-blue-900">
+            <h2 className="text-blue-900">{search}</h2>
             <h1>{city.temp}&nbsp; F</h1>
             <h3>
               {city.temp_min} min | {city.temp_max} max
