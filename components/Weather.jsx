@@ -18,8 +18,8 @@ const Weather = () => {
   }, [search]);
 
   return (
-    <div className="p-4 font-serif text-left indent-1">
-      <h1 className="text-white">Temps Today</h1>
+    <div className="p-4 font-serif text-right indent-1">
+      <h1 className="text-white pr-5">Temps Today</h1>
       <input
         type="search"
         className="InputField indent-1"
@@ -29,7 +29,7 @@ const Weather = () => {
       />
       {!city ? (
         <div>
-          <h3 className="text-white">Enter your city</h3>
+          <h4 className="text-white pr-5">Enter your city</h4>
         </div>
       ) : (
         <div>
