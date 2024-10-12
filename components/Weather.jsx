@@ -19,18 +19,17 @@ const Weather = () => {
 
   return (
     <div className="p-4 font-serif text-right indent-1">
-      <h1 className="text-white pr-5">Temps Today</h1>
+      <h1 className="text-white pr-5">Temps &deg; Today</h1>
       <input
         type="search"
-        className="InputField indent-1"
+        className="InputField indent-1 text-sm"
+        placeholder="Enter City Name ..."
         onChange={(event) => {
           setSearch(event.target.value.toLocaleUpperCase());
         }}
       />
       {!city ? (
-        <div>
-          <h4 className="text-white pr-5">Enter your city</h4>
-        </div>
+        <div>{/* <h4 className="text-white pr-5">Enter your city</h4> */}</div>
       ) : (
         <div>
           <div className="text-blue-900">
