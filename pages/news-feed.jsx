@@ -51,7 +51,7 @@ const NewsFeed = (props) => {
         <p>{currentDate}</p>
       </div>
       <div className="mt-10 md:mt-0 text-2xl text-Snow  text-center">
-        <div className="p-4 font-serif font-semibold">
+        <div className="p-2 font-serif font-semibold">
           New York Times{" "}
           <span className="text-blue-300 font-bold animate-pulse font-serif">
             Top Stories
