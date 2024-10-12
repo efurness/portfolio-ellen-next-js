@@ -50,7 +50,7 @@ const NewsFeed = (props) => {
       <div className="mt-10 md:mt-0 text-md text-Snow font-serif text-left p-1">
         <p>{currentDate}</p>
       </div>
-      <Weather />
+      <Weather theme={props.theme} />
 
       <div className="mt-10 md:mt-0 text-2xl text-Snow  text-center">
         <div className="p-2 font-serif font-semibold">

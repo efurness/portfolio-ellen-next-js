@@ -10,7 +10,6 @@ const home = (props) => {
       <Banner theme={props.theme} setTheme={props.setTheme} />
       <MyExpertise theme={props.theme} setTheme={props.setTheme} />
       <Recommendations theme={props.theme} setTheme={props.setTheme} />
-      <Weather />
       <Footer theme={props.theme} setTheme={props.setTheme} />
     </div>
   );

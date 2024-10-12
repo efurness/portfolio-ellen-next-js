@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-const Weather = () => {
+const Weather = (theme) => {
+  const textColor = theme === "dark" ? "text-Snow" : "text-blue-600";
+  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50";
+
   const [city, setCity] = useState(null);
   const [search, setSearch] = useState("");
   useEffect(() => {
@@ -22,7 +25,7 @@ const Weather = () => {
       <h1 className="text-white pr-5">Temps &deg; &nbsp;Today</h1>
       <input
         type="search"
-        className="InputField indent-1 text-sm"
+        className={`InputField indent-1 text-sm ${textColor}`}
         placeholder="Enter City Name ..."
         onChange={(event) => {
           setSearch(event.target.value.toLocaleUpperCase());
