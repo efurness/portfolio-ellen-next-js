@@ -24,7 +24,7 @@ const Weather = () => {
         type="search"
         className="InputField indent-1"
         onChange={(event) => {
-          setSearch(event.target.value);
+          setSearch(event.target.value.toLocaleUpperCase());
         }}
       />
       {!city ? (
@@ -37,7 +37,7 @@ const Weather = () => {
             <h2 className="text-blue-900">{search}</h2>
             <h1>{Math.round(city.temp)}&deg; F</h1>
             <h6 className="text-sm">
-              min {Math.round(city.temp_min)}&deg; | max &nbsp;
+              low {Math.round(city.temp_min)}&deg; | high &nbsp;
               {Math.round(city.temp_max)}&deg;
               {/* {city.description} */}
             </h6>
