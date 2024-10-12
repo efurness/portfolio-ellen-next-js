@@ -22,7 +22,7 @@ const Weather = (theme) => {
 
   return (
     <div className="p-4 font-serif text-left indent-1">
-      <h1 className="text-white pr-5">Temps &deg; &nbsp;Today</h1>
+      <h1 className="text-green-300">Temps &deg; &nbsp;Today</h1>
       <input
         type="search"
         className={`InputField indent-1 text-sm ${textColor}`}
