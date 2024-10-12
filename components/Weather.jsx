@@ -7,18 +7,10 @@ const Weather = () => {
     const fetchApi = async () => {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=imperial&appid=c8f8824f82f862c7696a070f2a1a8586`;
       const response = await fetch(url);
-      const resJson = await response.json();
-      setCity(resJson.main);
-    };
+      console.log(response);
 
-    fetchApi();
-  }, [search]);
-
-  useEffect(() => {
-    const fetchApi = async () => {
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=imperial&appid=c8f8824f82f862c7696a070f2a1a8586`;
-      const response = await fetch(url);
       const resJson = await response.json();
+      console.log(resJson);
       setCity(resJson.main);
     };
 
@@ -46,6 +38,7 @@ const Weather = () => {
             <h1>{city.temp}&nbsp; F</h1>
             <h3>
               {city.temp_min} min | {city.temp_max} max
+              {/* {city.description} */}
             </h3>
           </div>
         </div>

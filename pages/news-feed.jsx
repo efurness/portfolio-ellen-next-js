@@ -47,7 +47,6 @@ const NewsFeed = (props) => {
   return (
     <BannerLayout>
       <Weather />
-
       <div className="mt-10 md:mt-0 text-md text-Snow font-serif text-right p-1">
         <p>{currentDate}</p>
       </div>
