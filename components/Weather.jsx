@@ -35,11 +35,12 @@ const Weather = () => {
         <div>
           <div className="text-blue-900">
             <h2 className="text-blue-900">{search}</h2>
-            <h1>{city.temp}&nbsp; F</h1>
-            <h3>
-              {city.temp_min} min | {city.temp_max} max
+            <h1>{Math.round(city.temp)}&deg; F</h1>
+            <h6 className="text-sm">
+              min {Math.round(city.temp_min)}&deg; | max &nbsp;
+              {Math.round(city.temp_max)}&deg;
               {/* {city.description} */}
-            </h3>
+            </h6>
           </div>
         </div>
       )}
