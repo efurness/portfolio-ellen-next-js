@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import React, { useEffect, useState } from "react";
 import Articles from "../components/Articles";
 import Weather from "../components/Weather";
-
+// import Clouds from "../components/Clouds";
 import axios from "axios";
 function getDate() {
   const weekdays = [
@@ -47,6 +47,7 @@ const NewsFeed = (props) => {
   return (
     <BannerLayout>
       <Weather />
+      {/* <Clouds /> */}
       <div className="mt-10 md:mt-0 text-md text-Snow font-serif text-left p-1">
         <p>{currentDate}</p>
       </div>
