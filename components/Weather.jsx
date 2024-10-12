@@ -19,7 +19,7 @@ const Weather = () => {
 
   return (
     <div className="p-4 font-serif text-right indent-1">
-      <h1 className="text-white pr-5">Temps &deg; Today</h1>
+      <h1 className="text-white pr-5">Temps &deg; &nbsp;Today</h1>
       <input
         type="search"
         className="InputField indent-1 text-sm"
