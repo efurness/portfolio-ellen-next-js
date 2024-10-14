@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Articles from "../components/Articles";
 import Weather from "../components/Weather";
 // import Clouds from "../components/Clouds";
+
 import axios from "axios";
 function getDate() {
   const weekdays = [
@@ -46,15 +47,15 @@ const NewsFeed = (props) => {
 
   return (
     <BannerLayout>
-      {/* <Clouds /> */}
       <Weather theme={props.theme} />
+      {/* <Clouds /> */}
 
       <div className="mt-10 md:mt-0 text-md text-Snow font-serif text-left p-1">
-        <p>{currentDate}</p>
+        {currentDate}
       </div>
 
       <div className="mt-10 md:mt-0 text-2xl text-Snow  text-center">
-        <div className="p-2 font-serif font-semibold">
+        <div className="font-serif font-semibold">
           New York Times{" "}
           <span className="text-blue-300 font-bold animate-pulse font-serif">
             Top Stories

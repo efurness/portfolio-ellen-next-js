@@ -46,6 +46,7 @@ const Weather = (theme) => {
               </h6>
             </div>
           </div>
+          <div></div>
         </div>
       )}
     </div>
