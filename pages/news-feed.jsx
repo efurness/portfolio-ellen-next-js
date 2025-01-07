@@ -28,7 +28,7 @@ const NewsFeed = (props) => {
   const [loading, setLoading] = useState(false);
   const [articles, setArticles] = useState([]);
   const [currentDate, setCurrentDate] = useState(getDate());
-
+  const textColor = props.theme === "dark" ? "text-Snow" : "text-blue-900";
   useEffect(() => {
     const getArticles = async () => {
       setLoading(true);
@@ -47,19 +47,24 @@ const NewsFeed = (props) => {
 
   return (
     <BannerLayout>
-      <Weather theme={props.theme} />
-      {/* <Clouds /> */}
-
-      <div className="mt-10 md:mt-0 text-md text-Snow font-serif text-left p-1">
+      <div className="mt-10 md:mt-0 text-md text-Snow font-serif text-right p-1">
         {currentDate}
       </div>
 
+      <Weather theme={props.theme} />
+      {/* <Clouds /> */}
+      <br />
+      <br />
+      <br />
+
       <div className="mt-10 md:mt-0 text-2xl text-Snow  text-center">
-        <div className="font-serif font-semibold">
+        <div className={`font-serif font-semibold ${textColor}`}>
           New York Times{" "}
           <span className="text-blue-300 font-bold animate-pulse font-serif">
             Top Stories
           </span>
+          <br />
+          <br />
         </div>
         <div className="mt-10 md:mt-0 text-sm text-Snow font-style: italic text-left">
           <Articles loading={loading} articles={articles} theme={props.theme} />
