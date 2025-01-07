@@ -7,17 +7,21 @@ const Weather = (theme) => {
   const [city, setCity] = useState(null);
   const [search, setSearch] = useState("");
   useEffect(() => {
+    if (search === "") return;
+
     const fetchApi = async () => {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=imperial&appid=c8f8824f82f862c7696a070f2a1a8586`;
       const response = await fetch(url);
       console.log(response);
-
+      if (response.ok === false) return;
       const resJson = await response.json();
       console.log(resJson);
-      setCity(resJson.main);
-    };
 
-    fetchApi();
+      setCity(resJson);
+    };
+    fetchApi().catch((error) => {
+      console.error("Error:", error);
+    });
   }, [search]);
 
   return (
@@ -35,15 +39,19 @@ const Weather = (theme) => {
         <div>{/* <h4 className="text-white pr-5">Enter your city</h4> */}</div>
       ) : (
         <div>
-          <div className="max-w-sm w-40 lg:max-w-45 lg:flex bg-white text-left">
+          <div className="max-w-sm w-40 lg:max-w-45 lg:flex bg-green-200 text-left">
             <div className="text-blue-900">
               <h2 className="text-blue-900">{search}</h2>
-              <h1>{Math.round(city.temp)}&deg; F</h1>
+              <h2>{Math.round(city.main.temp)}&deg; F</h2>
               <h6 className="text-sm">
-                low {Math.round(city.temp_min)}&deg; | high &nbsp;
-                {Math.round(city.temp_max)}&deg;
-                {/* {city.description} */}
+                low {Math.round(city.main.temp_min)}&deg; | high &nbsp;
+                {Math.round(city.main.temp_max)}&deg;
               </h6>
+              <h6>{city.weather[0].description}</h6>
+              <img
+                src={`https://openweathermap.org/img/wn/${city.weather[0].icon}.png`}
+                alt="weather status icon"
+              ></img>
             </div>
           </div>
           <div></div>
