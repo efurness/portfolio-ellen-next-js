@@ -39,7 +39,7 @@ const Weather = (theme) => {
         <div>{/* <h4 className="text-white pr-5">Enter your city</h4> */}</div>
       ) : (
         <div>
-          <div className="max-w-sm w-40 lg:max-w-40 lg:flex bg-green-200 opacity-75 text-left">
+          <div className="max-w-sm w-40 lg:max-w-40 lg:flex bg-green-200 opacity-80 text-left">
             <div className="text-blue-900">
               <h2 className="text-blue-900">{search}</h2>
               <h2>{Math.round(city.main.temp)}&deg; F</h2>
