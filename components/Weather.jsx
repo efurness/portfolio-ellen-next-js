@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 const Weather = (theme) => {
   const textColor = theme === "dark" ? "text-Snow" : "text-blue-600";
+  const textColor2 = theme === "dark" ? "text-Snow" : "text-green-300";
+
   const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50";
 
   const [city, setCity] = useState(null);
@@ -26,7 +28,7 @@ const Weather = (theme) => {
 
   return (
     <div className="p-4 font-serif text-left indent-1">
-      <h1 className="text-green-300">Temps &deg; &nbsp;Today</h1>
+      <h1 className={`${textColor2}`}>Temps &deg; &nbsp;Today</h1>
       <input
         type="search"
         className={`InputField indent-1 text-sm ${textColor}`}
