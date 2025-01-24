@@ -33,7 +33,7 @@ const Footer = () => {
             <img src="images/storymap.png" alt="story map image" />
           </span>
         </a>
-        <a href="./Resume2024.pdf" target="_blank" rel="noreferrer">
+        <a href="./Resume2025.pdf" target="_blank" rel="noreferrer">
           <span className="text-right">
             <img src="images/resume.png" alt="resume image" />
           </span>
