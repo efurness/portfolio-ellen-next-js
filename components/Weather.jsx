@@ -54,6 +54,13 @@ const Weather = (theme) => {
                 src={`https://openweathermap.org/img/wn/${city.weather[0].icon}.png`}
                 alt="weather status icon"
               ></img>
+              <a
+                className="underline"
+                href={"https://openweathermap.org/city/" + city.id}
+              >
+                5 day forecast
+              </a>
+              *
             </div>
           </div>
           <div></div>
