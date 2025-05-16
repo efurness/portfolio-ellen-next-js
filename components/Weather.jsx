@@ -59,7 +59,7 @@ const Weather = (theme) => {
                   className="underline"
                   href={"https://openweathermap.org/city/" + city.id}
                 >
-                  5 day forecast
+                  8 day forecast
                 </a>
               </div>
             </div>
