@@ -63,7 +63,6 @@ const NewsFeed = (props) => {
 
       <Weather theme={props.theme} />
       {/* <Clouds /> */}
-      <br />
 
       <div className="mt-10 md:mt-0 text-sm text-Snow font-style: italic text-left">
         <Articles loading={loading} articles={articles} theme={props.theme} />

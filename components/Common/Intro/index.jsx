@@ -14,7 +14,7 @@ import Tools from "./Tools";
 import Skills from "./Skills";
 import Image from "next/image";
 import { NAME, DESIGNATION, SOCIAL_LINKS } from "../../../constants/constants";
-import Ellen from "../../../public/images/portfolio2024.png";
+import Ellen from "../../../public/images/newPicSm.png";
 
 const Intro = (props) => {
   const theme = props.theme;
