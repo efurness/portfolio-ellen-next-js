@@ -50,7 +50,6 @@ const Footer = () => {
       </div>
       <div className="hidden md:flex items-center">
         <div className="mr-1 text-base">{/* <MdMail /> */}</div>
-        <div></div>
       </div>
     </div>
   );

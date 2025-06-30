@@ -11,29 +11,27 @@ export default function Layout(props) {
   const theme = props.theme,
     setTheme = props.setTheme;
   const textColor = theme === "dark" ? "text-Snow" : "text-black";
-  const textColor2 = theme === "dark" ? "text-Snow" : "text-blue-700"
-  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50"
-  
-  
+  const textColor2 = theme === "dark" ? "text-Snow" : "text-blue-700";
+  const bgColor = theme === "dark" ? "bg-DeepNightBlack" : "bg-sky-50";
+
   return (
-    <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none py-1 ${bgColor} S{textColor2} `}>
+    <div
+      className={`h-screen lg:p-[0.8rem] flex flex-col select-none pt-1 ${bgColor} S{textColor2} `}
+    >
       <div className={`theme-switcher ${textColor2} text-sm font-semibold`}>
         <label style={{ float: "left" }}>
           <Switch
             onChange={() => {
-              if (theme === "light" ) {
-                setTheme("dark") ;
+              if (theme === "light") {
+                setTheme("dark");
               } else {
                 setTheme("light");
               }
-              
             }}
-            checked={theme === "light" ? true  : false}
-            
-            
+            checked={theme === "light" ? true : false}
           />
 
-            {theme === "light" ? ' Light mode '  : ' Dark mode '}
+          {theme === "light" ? " Light mode " : " Dark mode "}
         </label>
       </div>
 
@@ -63,7 +61,7 @@ export default function Layout(props) {
           </div>
         </div>
       </div>
-      <div className="flex relative h-full justify-between gap-x-3 adjust-height" > 
+      <div className="flex relative h-full justify-between gap-x-3 adjust-height">
         {/* left most side */}
         <div
           className={`w-64 h-screen left-0 lg:rounded-xl -top-10 lg:top-0 lg:left-0 lg:h-full overflow-hidden ${bgColor} ${textColor} shadow-2xl z-50 lg:flex flex-col  lg:relative ${

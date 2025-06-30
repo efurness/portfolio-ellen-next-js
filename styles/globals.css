@@ -11,12 +11,11 @@ body {
   height: 100vh;
 }
 .adjust-height {
-  height: calc(100% - 200px);
+  height: calc(100% - 60px);
 }
 /* .spacer-sm {
   height: 175px;
 } */
-
 
 @media (min-width: 1024px) {
   .adjust-height {
@@ -25,7 +24,6 @@ body {
   /* .spacer-sm {
     height: 0px;
   } */
-  
 }
 @layer utilities {
   @layer components {
