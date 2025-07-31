@@ -32,7 +32,7 @@ const Weather = (theme) => {
       <input
         type="search"
         className={`InputField indent-1 text-sm ${textColor}`}
-        placeholder="Enter City Name ..."
+        placeholder="Enter City, Country"
         onChange={(event) => {
           setSearch(event.target.value.toLocaleUpperCase());
         }}
