@@ -6,7 +6,7 @@ import { useState } from "react";
 const queryClient = new QueryClient();
 
 export default function App({ Component, pageProps }) {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   pageProps.theme = theme;
   pageProps.setTheme = setTheme;
   return (

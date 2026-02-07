@@ -22,16 +22,16 @@ export default function Layout(props) {
         <label style={{ float: "left" }}>
           <Switch
             onChange={() => {
-              if (theme === "light") {
-                setTheme("dark");
-              } else {
+              if (theme === "dark") {
                 setTheme("light");
+              } else {
+                setTheme("dark");
               }
             }}
-            checked={theme === "light" ? true : false}
+            checked={theme === "dark" ? true : false}
           />
 
-          {theme === "light" ? " Light mode " : " Dark mode "}
+          {theme === "dark" ? " Dark mode " : "Light mode "}
         </label>
       </div>
 
